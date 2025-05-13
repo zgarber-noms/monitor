@@ -1,6 +1,7 @@
 from ._anvil_designer import AppBaseTemplate
 import anvil.users
 from ....utils.Navigation import navigate
+from anvil import *
 
 class AppBase(AppBaseTemplate):
   def __init__(self, **properties):
@@ -30,5 +31,6 @@ class AppBase(AppBaseTemplate):
     pass
 
   def connections_link_click(self, **event_args):
-    navigate(page='Connections')
+    open_form("Pages.Connections")
+    #navigate(page='connections')
   
