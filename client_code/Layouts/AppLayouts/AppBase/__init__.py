@@ -28,4 +28,7 @@ class AppBase(AppBaseTemplate):
 
   def connections_Link_click(self, **event_args):
     pass
+
+  def connections_link_click(self, **event_args):
+    navigate(page='Connections')
   

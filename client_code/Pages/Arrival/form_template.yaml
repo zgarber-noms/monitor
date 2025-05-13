@@ -1,0 +1,25 @@
+components_by_slot:
+  primary_scrolling_slot:
+  - layout_properties: {}
+    name: repeating_panel_1
+    properties: {item_template: Pages.Arrival.ItemTemplate1}
+    type: RepeatingPanel
+  - components:
+    - name: repeating_panel_2
+      properties: {item_template: Pages.Arrival.RowTemplate2}
+      type: RepeatingPanel
+    layout_properties: {}
+    name: data_grid_1
+    properties:
+      columns:
+      - {data_key: column_1, id: JKSDUP, title: Column 1}
+      - {data_key: column_2, id: VJQQOR, title: Column 2}
+      - {data_key: column_3, id: OJLQEN, title: Column 3}
+    type: DataGrid
+  primary_static_slot:
+  - layout_properties: {}
+    name: text_area_1
+    properties: {text: '               Some Arrival Text/User Authetication - Hello World'}
+    type: TextArea
+is_package: true
+layout: {type: 'form:Layouts.AppLayouts.Primary'}

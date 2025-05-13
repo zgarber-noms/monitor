@@ -75,6 +75,7 @@ components_by_slot:
       name: connection_1
       properties: {primary_fill: 'theme:Primary 300', secondary_fill: 'theme:Primary 400', size: 25}
       type: form:Components.Icons.Connection
+    event_bindings: {click: connections_link_click}
     layout_properties: {}
     name: connections_link
     properties: {name: connections, text: Connections}
