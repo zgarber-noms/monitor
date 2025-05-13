@@ -19,7 +19,7 @@
 
 .app {
   display: flex;
-  background-color: var(--lilac-750);
+  background-color: var(--NOMS_Muted_blue);
   height: 100vh;
   padding-top: 40px;
   overflow: hidden;
@@ -31,7 +31,7 @@
 
 /** LEFT SIDE **/
 .sidebar-darkbox {
-  background: linear-gradient(to bottom, var(--lilac-800), var(--lilac-900));
+  background: linear-gradient(to bottom, var(--NOMS_Blue_Dark), var(--NOMS_Blue_Very_Dark));
   padding: 40px 150px 0 0;
   border-radius: 0 75px 0 0;
   display: flex;

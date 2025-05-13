@@ -64,13 +64,25 @@ components_by_slot:
   - components:
     - layout_properties: {slot: navlink-icon-slot}
       name: customer_1
-      properties: {primary_fill: 'theme:Primary 400', secondary_fill: 'theme:Primary 300', size: 30}
+      properties: {primary_fill: 'theme:Primary 300', secondary_fill: 'theme:Primary 400', size: 30}
       type: form:Components.Icons.Customer
-    event_bindings: {click: customers_link_click}
     layout_properties: {}
     name: customers_link
-    properties: {active: false, name: customers, text: Customers}
+    properties: {name: customers, text: Customers}
     type: form:Components.NavLink
+  - components:
+    - layout_properties: {slot: navlink-icon-slot}
+      name: connection_1
+      properties: {primary_fill: 'theme:Primary 300', secondary_fill: 'theme:Primary 400', size: 25}
+      type: form:Components.Icons.Connection
+    layout_properties: {}
+    name: connections_link
+    properties: {name: connections, text: Connections}
+    type: form:Components.NavLink
+  - layout_properties: {}
+    name: link_1
+    properties: {icon: 'fa:'}
+    type: Link
 events: []
 is_package: true
 layout:

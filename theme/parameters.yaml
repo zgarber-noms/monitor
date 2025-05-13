@@ -53,6 +53,11 @@ color_scheme:
   - {color: '#ebebf0', name: Primary 050}
   - {color: '#f3f3f3', name: Grey 025}
   - {color: '#f3f4f8', name: Primary 025}
+  - {color: '#01A9D2', name: NOMS Blue Light}
+  - {color: '#0652A8', name: NOMS Blue Dark}
+  - {color: '#000940', name: NOMS Blue Very Dark}
+  - {color: '#0862BA', name: NOMS Muted Blue}
+  - {color: '#000000', name: ''}
 roles:
 - {name: w-full}
 - {name: h-full}

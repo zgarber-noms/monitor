@@ -25,4 +25,7 @@ class AppBase(AppBaseTemplate):
   def form_show(self, **event_args):
     if anvil.users.get_user():
       self.user_email_label.text = anvil.users.get_user()['name'] or anvil.users.get_user()['email']
+
+  def connections_Link_click(self, **event_args):
+    pass
   

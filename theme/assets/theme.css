@@ -56,6 +56,10 @@
   --error-700: %color:Error 700%;
   --error-800: %color:Error 800%;
   --error-900: %color:Error 900%;
+  --NOMS_Blue_Light: %color:NOMS Blue Light%;
+  --NOMS_Blue_Dark: %color:NOMS Blue Dark%;
+  --NOMS_Blue_Very_Dark: %color:NOMS Blue Very Dark%;
+  --NOMS_Muted_blue: %color:NOMS Muted Blue%;
 }
 
 /* Customise the loading spinner */

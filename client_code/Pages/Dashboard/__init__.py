@@ -7,6 +7,7 @@ from datetime import datetime, timedelta, date
 
 class Dashboard(DashboardTemplate):
   def __init__(self, **properties):
+    
     self.last_week = date.today() - timedelta(days=6)
     # Initialise a dict of empty filters when the dashboard loads
     self.filters = {}
@@ -155,5 +156,6 @@ class Dashboard(DashboardTemplate):
 
   def open_tickets_stat_click(self, **event_args):
     navigate(page='tickets', search_filters = {'status': Data.OPEN})
+    
     
    

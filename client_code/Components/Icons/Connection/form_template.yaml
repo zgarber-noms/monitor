@@ -1,0 +1,19 @@
+components: []
+container:
+  data_bindings: []
+  properties:
+    html: "<div anvil-name=\"component\" style=\"display: flex\">\n  <div style=\"display:flex\">\n<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->\n    <svg svg anvil-name=\"icon\" fill=\"#000000\" width=\"100px\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" \n  viewBox=\"0 0 490 490\" xml:space=\"preserve\">\n  <g>\n    <g>\n      <path class=\"primary-path\" d=\"M0,0v490h490V0H0z M430.1,332.9h-87.5v50.9h-33.1v50.9H180.4v-50.6h-33.1v-51.3H59.9v-278h46.7v66.5h38.5V54.8h40.8v66.5\n        h38.5V54.8h40.8v66.5h38.5V54.8h40.8v66.5H383V54.8h46.7v278.1L430.1,332.9L430.1,332.9z\"/>\n    </g>\n  </g>\n</svg>\n  </div>\n</div>"
+  type: HtmlTemplate
+custom_component: true
+is_package: true
+properties:
+- {default_binding_prop: true, default_value: '', important: true, name: primary_fill, type: color}
+- {default_value: '', important: true, name: secondary_fill, type: color}
+- {description: '16', important: true, name: size, type: number}
+- default_value: left
+  designer_hint: align-horizontal
+  important: true
+  name: align
+  options: [left, center, right, full]
+  type: enum
+- {default_value: true, designer_hint: visible, important: true, name: visible, type: boolean}
