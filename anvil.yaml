@@ -166,7 +166,7 @@ native_deps:
   head_html: |-
     <link rel="stylesheet" href="_/theme/styles/app.css"/>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
-package_name: Ticketing_System
+package_name: anvil_extras
 runtime_options:
   client_version: '3'
   legacy_features: {__dict__: true, bootstrap3: true, class_names: true, root_container: true}
