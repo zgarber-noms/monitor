@@ -12,6 +12,7 @@ class Autocomplete(AutocompleteTemplate):
     # Any code you write here will run when the form opens.
 
   def text_box_1_change(self, **event_args):
+    print('change')
     """This method is called when the text in this text box is edited"""
     new_options = []
     for option in self.options:
