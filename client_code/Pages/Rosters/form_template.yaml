@@ -1,0 +1,37 @@
+components_by_slot:
+  primary_static_slot:
+  - layout_properties: {}
+    name: rich_text_1
+    properties:
+      content: |+
+        # Screen to show status of all of rosters
+
+      font_size: 20
+    type: RichText
+  - layout_properties: {}
+    name: spacer_1
+    properties: {height: 32, spacing_above: large, spacing_below: large}
+    type: Spacer
+  - layout_properties: {}
+    name: rich_text_2
+    properties: {content: '### List type grid to show payer -> last roster -> last rme file -> RME details'}
+    type: RichText
+  - components:
+    - name: repeating_panel_1
+      properties: {item_template: Pages.Rosters.RowTemplate5}
+      type: RepeatingPanel
+    layout_properties: {}
+    name: data_grid_1
+    properties:
+      columns:
+      - {data_key: column_1, id: JKSDUP, title: Column 1}
+      - {data_key: column_2, id: VJQQOR, title: Column 2}
+      - {data_key: column_3, id: OJLQEN, title: Column 3}
+    type: DataGrid
+  title_slot:
+  - layout_properties: {}
+    name: label_1
+    properties: {text: Roster Management}
+    type: Label
+is_package: true
+layout: {type: 'form:Layouts.AppLayouts.Primary'}

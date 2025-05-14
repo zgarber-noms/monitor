@@ -5,24 +5,18 @@
   align-items: center;
   justify-content: center;
 }
+.list-button-container{
+  width: 100%;
+  margin-top: 2px;
+  gap: 5px;
+}
 
 .list-button-container.primary{
-  background: var(--error-400);
+  background: var(--primary-100);
 }
 
 
-.list-button-container.large {
-  gap: 10px;
-  border-radius: 25px;
-  padding: 0 16px 0 10px;
-  height: 50px
-}
-.list-button-container.small {
-  gap: 5px;
-  border-radius: 20px;
-  padding: 0 20px 0 18px;
-  height: 40px;
-}
+
 
 
 .button-container.secondary {

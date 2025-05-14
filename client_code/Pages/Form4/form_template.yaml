@@ -1,0 +1,8 @@
+components_by_slot:
+  title_slot:
+  - layout_properties: {}
+    name: label_1
+    properties: {text: Monitor}
+    type: Label
+is_package: true
+layout: {type: 'form:Layouts.AppLayouts.Primary'}

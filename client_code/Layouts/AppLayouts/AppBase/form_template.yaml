@@ -53,6 +53,42 @@ components_by_slot:
     type: form:Components.NavLink
   - components:
     - layout_properties: {slot: navlink-icon-slot}
+      name: monitor_1
+      properties: {primary_fill: '', secondary_fill: 'theme:Primary 400', size: 30}
+      type: form:Components.Icons.Monitor
+    layout_properties: {}
+    name: monitor_link_1
+    properties: {text: Monitor}
+    type: form:Components.NavLink
+  - components:
+    - layout_properties: {slot: navlink-icon-slot}
+      name: calendar_1
+      properties: {primary_fill: '', secondary_fill: 'theme:Primary 400', size: 31}
+      type: form:Components.Icons.Calendar
+    layout_properties: {}
+    name: jobs_link
+    properties: {name: jobs, text: Jobs}
+    type: form:Components.NavLink
+  - components:
+    - layout_properties: {slot: navlink-icon-slot}
+      name: connection_1
+      properties: {primary_fill: 'theme:Primary 300', secondary_fill: 'theme:Primary 400', size: 25}
+      type: form:Components.Icons.Connection
+    event_bindings: {click: connections_link_click}
+    layout_properties: {}
+    name: connections_link
+    properties: {name: connections, text: Connections}
+    type: form:Components.NavLink
+  - layout_properties: {}
+    name: rosters_link_1
+    properties: {name: rosters, text: Rosters}
+    type: form:Components.NavLink
+  - layout_properties: {}
+    name: claims_link_1
+    properties: {name: '', text: Claims}
+    type: form:Components.NavLink
+  - components:
+    - layout_properties: {slot: navlink-icon-slot}
       name: tickets_1
       properties: {primary_fill: 'theme:Primary 400', secondary_fill: 'theme:Primary 300', size: 30}
       type: form:Components.Icons.Tickets
@@ -69,34 +105,6 @@ components_by_slot:
     layout_properties: {}
     name: customers_link
     properties: {name: customers, text: Customers}
-    type: form:Components.NavLink
-  - components:
-    - layout_properties: {slot: navlink-icon-slot}
-      name: connection_1
-      properties: {primary_fill: 'theme:Primary 300', secondary_fill: 'theme:Primary 400', size: 25}
-      type: form:Components.Icons.Connection
-    event_bindings: {click: connections_link_click}
-    layout_properties: {}
-    name: connections_link
-    properties: {name: connections, text: Connections}
-    type: form:Components.NavLink
-  - components:
-    - layout_properties: {slot: navlink-icon-slot}
-      name: calendar_1
-      properties: {primary_fill: '', secondary_fill: 'theme:Primary 400', size: 30}
-      type: form:Components.Icons.Calendar
-    layout_properties: {}
-    name: jobs_link
-    properties: {name: jobs, text: Jobs}
-    type: form:Components.NavLink
-  - components:
-    - layout_properties: {slot: navlink-icon-slot}
-      name: monitor_1
-      properties: {primary_fill: '', secondary_fill: 'theme:Primary 400', size: 30}
-      type: form:Components.Icons.Monitor
-    layout_properties: {}
-    name: nav_link_1
-    properties: {text: Monitor}
     type: form:Components.NavLink
 events: []
 is_package: true

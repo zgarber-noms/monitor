@@ -3,7 +3,7 @@ container:
   properties:
     html: |-
       <div anvil-name="app-button-component" style="display: flex">
-        <div anvil-name="list-option-button" class="list-button-container">
+        <div anvil-name="app-button" class="list-button-container">
           <div anvil-name="button-text" anvil-slot="button-text-slot">
             <p anvil-if-slot-empty="button-text-slot">Text text</p>
           </div>
