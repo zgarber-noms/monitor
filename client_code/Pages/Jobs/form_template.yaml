@@ -6,6 +6,10 @@ components_by_slot:
     name: drop_down_1
     properties: {}
     type: DropDown
+  - layout_properties: {}
+    name: multi_select_drop_down_1
+    properties: {}
+    type: form:MultiSelectDropDown
   form_static_slot:
   - layout_properties: {}
     name: text_box_2
