@@ -33,4 +33,7 @@ class AppBase(AppBaseTemplate):
   def connections_link_click(self, **event_args):
     open_form("Pages.Connections")
     #navigate(page='connections')
+
+  def monitor_link_1_click(self, **event_args):
+    navigate("monitor")
   

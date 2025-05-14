@@ -29,6 +29,9 @@ nav_dic = {
   'arrival': {
     'active': 'arrival',
     'form_name': 'Pages.Arrival' } ,
+  'monitor': {
+    'active': 'monitor',
+    'form_name': 'Pages.Monitor' } ,
 }
 
 def navigate(page, **page_props):    
