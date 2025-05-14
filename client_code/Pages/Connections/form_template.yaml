@@ -11,8 +11,16 @@ components_by_slot:
     properties: {text: SQL Query}
     type: Button
   - layout_properties: {}
+    name: table_name_input
+    properties: {placeholder: Enter Caboodle Table Name}
+    type: TextBox
+  - layout_properties: {}
+    name: schema_name_input
+    properties: {placeholder: Enter Caboodle Schema}
+    type: TextBox
+  - layout_properties: {}
     name: text_area_1
-    properties: {text: Click the button to convert a sql table from a query to a table resented in markdown language}
+    properties: {}
     type: TextArea
   - layout_properties: {}
     name: rich_text_1

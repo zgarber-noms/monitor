@@ -42,6 +42,10 @@ def __dir__():
 def get_initial_data():
   global data
   data = anvil.server.call("get_initial_data")
+def df_as_markdown(table, schema):
+  global data
+  data = anvil.server.call("df_as_markdown", table, schema)
+  return data
 
 
 def __getattr__(name):

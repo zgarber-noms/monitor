@@ -1,2 +1,16 @@
+components_by_slot:
+  primary_static_slot:
+  - layout_properties: {}
+    name: rich_text_1
+    properties:
+      content: |-
+        # Some Home landing screen content
+        ## Shows most relevant information for at a glance updates
+    type: RichText
+  title_slot:
+  - layout_properties: {}
+    name: label_1
+    properties: {text: 'What should this Application be called?'}
+    type: Label
 is_package: true
 layout: {type: 'form:Layouts.AppLayouts.Primary'}

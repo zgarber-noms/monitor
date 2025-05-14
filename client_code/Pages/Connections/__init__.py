@@ -7,7 +7,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-from ...utils.Data import 
+from ...utils import Data 
 
 class Connections(ConnectionsTemplate):
   def __init__(self, **properties):
@@ -18,4 +18,9 @@ class Connections(ConnectionsTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.rich_text_1.content = df_as_markdown()
+    table = self.table_name_input.text
+    schema = self.schema_name_input.text
+    self.text_area_1.text = f'Showing Data from Caboodle Table [{schema}].[{table}]'
+    x= Data.df_as_markdown(table, schema)
+
+    self.rich_text_1.content = x

@@ -14,7 +14,7 @@ def error_handler(err):
 set_default_error_handling(error_handler)
 
 def start_up():
-  open_form('Pages.Form3')
+  open_form('Pages.Home')
   #navigate("arrival")
   #Data.get_initial_data()
     

@@ -8,7 +8,7 @@ class AppBase(AppBaseTemplate):
     self.init_components(**properties)
     
   def dashboard_link_click(self, **event_args):
-    navigate(page='dashboard')
+    navigate(page='home')
 
   def tickets_link_click(self, **event_args):
     navigate(page='tickets')

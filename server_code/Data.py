@@ -35,8 +35,11 @@ def get_initial_data():
   )
 
 @anvil.server.callable
-def df_as_markdown():
+def df_as_markdown(table, schema):
+  print(table)
+  print(schema)
   # get the df somehow
+  print('called markdown')
   data = {
     'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],
     'Age': [25, 30, 35, 28, 32],
@@ -44,7 +47,9 @@ def df_as_markdown():
     'Salary': [50000, 75000, 60000, 80000, 55000]
   }
   df = pd.DataFrame(data)
+  print(df.shape[0])
+  x = df.to_markdown()
 
-  
-  return df.to_markdown()
+  print(x)
+  return x
     
