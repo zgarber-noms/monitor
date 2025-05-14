@@ -76,7 +76,8 @@ components_by_slot:
       spacing:
         margin: [null, 30px, null, 30px]
     type: form:Components.Reusable.Spacer
-  - layout_properties: {}
+  - event_bindings: {show: repeating_panel_results_show}
+    layout_properties: {}
     name: repeating_panel_results
     properties: {item_template: Components.Customer.AssignExistingCustomer, spacing_above: none, spacing_below: none}
     type: RepeatingPanel

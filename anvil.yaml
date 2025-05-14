@@ -157,8 +157,11 @@ db_schema:
       type: string
     server: full
     title: Users
-dependencies: []
-name: Clone of Ticketing System (2)
+dependencies:
+- dep_id: dep_7sv9hn61oefl55
+  resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
+  version: {version_tag: v3.1.0}
+name: Monitor
 native_deps:
   head_html: |-
     <link rel="stylesheet" href="_/theme/styles/app.css"/>

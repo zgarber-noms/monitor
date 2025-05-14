@@ -1,0 +1,20 @@
+components_by_slot:
+  form_scrolling_slot:
+  - data_bindings:
+    - {code: 'self.item['''']', property: items, writeback: false}
+    layout_properties: {}
+    name: drop_down_1
+    properties: {}
+    type: DropDown
+  form_static_slot:
+  - layout_properties: {}
+    name: text_box_2
+    properties: {align: center, text: 'Available Jobs: (Make this search bar and autocomplete)', underline: true}
+    type: TextBox
+  title_slot:
+  - layout_properties: {}
+    name: text_box_1
+    properties: {text: Jobs}
+    type: TextBox
+is_package: true
+layout: {type: 'form:Layouts.AppLayouts.PrimaryOnRight'}

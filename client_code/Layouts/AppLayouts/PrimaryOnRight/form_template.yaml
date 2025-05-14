@@ -1,11 +1,13 @@
 components_by_slot:
   slot_2:
   - components:
-    - layout_properties: {slot: slot}
+    - components: []
+      layout_properties: {slot: slot}
       name: side_form_1
       properties: {}
       type: form:Layouts.LayoutComponents.SideForm
-    - layout_properties: {slot: slot}
+    - components: []
+      layout_properties: {slot: slot}
       name: primary_content_1
       properties: {}
       type: form:Layouts.LayoutComponents.PrimaryContent

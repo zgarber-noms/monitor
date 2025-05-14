@@ -129,3 +129,7 @@ class NewTicket(NewTicketTemplate):
         self.no_customer.visible = False
         self.selected_customer_label.visible = True
         self.selected_customer_label.text = f"{self.selected_customer['first_name']} {self.selected_customer['last_name']}"
+
+  def repeating_panel_results_show(self, **event_args):
+    """This method is called when the repeating panel is shown on the screen"""
+    pass
