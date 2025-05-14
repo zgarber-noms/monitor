@@ -1,2 +1,13 @@
+components_by_slot:
+  form_static_slot:
+  - layout_properties: {}
+    name: text_box_1
+    properties: {text: Autocomplete}
+    type: TextBox
+  - layout_properties: {}
+    name: autocomplete_1
+    properties: {}
+    type: form:Components.Autocomplete
+  primary_static_slot: []
 is_package: true
 layout: {type: 'form:Layouts.AppLayouts.PrimaryWithForm'}
