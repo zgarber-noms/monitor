@@ -1,0 +1,9 @@
+components:
+- data_bindings:
+  - {code: 'self.item[''text'']', property: text, writeback: false}
+  layout_properties: {full_width_row: true, grid_position: 'VALYDB,IZLYXK'}
+  name: link_1
+  properties: {}
+  type: Link
+container: {type: ColumnPanel}
+is_package: true

@@ -7,13 +7,15 @@ from anvil import *
 # On Authentication failure, navigates back to login back. Throw error as usual for any other type of error
 def error_handler(err):
   if isinstance(err, anvil.users.exceptions.AuthenticationFailed):
-    navigate(page='Arrival')
+    open_form('Components.Autocomplete')
+    #navigate(page='arrival')
   else:
     raise err
 set_default_error_handling(error_handler)
 
 def start_up():
-  open_form("Pages.Arrival")
+  open_form('Components.Autocomplete')
+  #navigate("arrival")
   #Data.get_initial_data()
     
 

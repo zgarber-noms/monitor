@@ -20,6 +20,15 @@ nav_dic = {
   'ticket': {
     'active': 'tickets',
     'form_name': 'Pages.Tickets.Ticket' } ,
+  'connections': {
+    'active': 'connections',
+    'form_name': 'Pages.Connections' } ,
+  'jobs': {
+    'active': 'jobs',
+    'form_name': 'Pages.Jobs' } ,
+  'arrival': {
+    'active': 'arrival',
+    'form_name': 'Pages.Arrival' } ,
 }
 
 def navigate(page, **page_props):    
