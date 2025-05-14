@@ -57,7 +57,7 @@ color_scheme:
   - {color: '#0652A8', name: NOMS Blue Dark}
   - {color: '#000940', name: NOMS Blue Very Dark}
   - {color: '#0862BA', name: NOMS Muted Blue}
-  - {color: '#000000', name: ''}
+  - {color: '#bfdcff', name: NOMS Faint Blue}
 roles:
 - {name: w-full}
 - {name: h-full}

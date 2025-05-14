@@ -6,8 +6,12 @@
   justify-content: center;
 }
 
+.button-container.list_button{
+  background: var(--error-400);
+}
+
 .button-container.secondary {
-  background: var(--secondary-500);
+  background: var(--NOMS_Faint_Blue);
 }
 .button-container.secondary:hover {
   background: var(--secondary-600);

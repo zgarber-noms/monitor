@@ -1,20 +1,24 @@
 components_by_slot:
   form_scrolling_slot:
-  - data_bindings:
-    - {code: 'self.item['''']', property: items, writeback: false}
+  - components:
+    - layout_properties: {}
+      name: app_button_1
+      properties: {align: center, appearance: secondary}
+      type: form:Components.Reusable.AppButton
     layout_properties: {}
-    name: drop_down_1
+    name: linear_panel_1
     properties: {}
-    type: DropDown
-  - layout_properties: {}
-    name: multi_select_drop_down_1
-    properties: {}
-    type: form:MultiSelectDropDown
+    type: LinearPanel
   form_static_slot:
   - layout_properties: {}
     name: text_box_2
-    properties: {align: center, text: 'Available Jobs: (Make this search bar and autocomplete)', underline: true}
+    properties: {align: center, text: Available Resources, underline: true}
     type: TextBox
+  primary_scrolling_slot:
+  - layout_properties: {}
+    name: repeating_panel_1
+    properties: {item_template: Pages.Jobs.ItemTemplate2}
+    type: RepeatingPanel
   title_slot:
   - layout_properties: {}
     name: text_box_1
