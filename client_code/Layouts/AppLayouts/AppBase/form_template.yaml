@@ -81,9 +81,9 @@ components_by_slot:
     properties: {name: connections, text: Connections}
     type: form:Components.NavLink
   - layout_properties: {}
-    name: link_1
-    properties: {icon: 'fa:'}
-    type: Link
+    name: jobs_link
+    properties: {name: jobs, text: Jobs}
+    type: form:Components.NavLink
 events: []
 is_package: true
 layout:

@@ -1,6 +1,7 @@
 components_by_slot:
   primary_static_slot:
-  - layout_properties: {}
+  - data_bindings: []
+    layout_properties: {}
     name: text_box_1
     properties: {text: '         Connections'}
     type: TextBox

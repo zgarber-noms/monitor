@@ -20,6 +20,7 @@ unique_ids:
     Components.Dashboard.ProgressGraph: '1710411244848516877974223.855'
     Components.Dashboard.ResolutionGraph: '1710362262171157271914662.89136'
     Components.Dashboard.StatCard: '171035688189961923790181.50818'
+    Components.Icons.Calendar: '174718178832424884549801.880817'
     Components.Icons.Connection: '1747158347667261709943448.0109'
     Components.Icons.Customer: '1709829374673672829466912.592'
     Components.Icons.Dashboard: '1709829620739994646411671.4'
