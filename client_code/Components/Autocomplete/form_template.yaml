@@ -10,7 +10,7 @@ components:
   type: ColumnPanel
 - layout_properties: {full_width_row: true, grid_position: 'CEJBLD,SQFOTJ'}
   name: repeating_panel_1
-  properties: {item_template: Components.Autocomplete.ItemTemplate2}
+  properties: {item_template: Components.Autocomplete.AutoCompleteOption}
   type: RepeatingPanel
 container: {type: ColumnPanel}
 is_package: true
