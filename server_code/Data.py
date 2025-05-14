@@ -1,5 +1,6 @@
 import anvil.server
 from anvil.tables import app_tables
+import pandas as pd
 
 CATEGORIES = [(x['name'], x) for x in app_tables.categories.search()]
 PRIORITIES = [(x['name'], x) for x in app_tables.priorities.search()]
@@ -32,3 +33,18 @@ def get_initial_data():
     NEW_CATEGORY = NEW_CATEGORY,
     NEW_PRIORITY = NEW_PRIORITY
   )
+
+@anvil.server.callable
+def df_as_markdown():
+  # get the df somehow
+  data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],
+    'Age': [25, 30, 35, 28, 32],
+    'Department': ['Sales', 'Engineering', 'Sales', 'Engineering', 'HR'],
+    'Salary': [50000, 75000, 60000, 80000, 55000]
+  }
+  df = pd.DataFrame(data)
+
+  
+  return df.to_markdown()
+    

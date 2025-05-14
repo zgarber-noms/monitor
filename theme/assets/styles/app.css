@@ -118,7 +118,7 @@
 .scrolling-section {
   flex: 1 1 auto;
   background-position: top;
-  background-repeat: repeat;
+/*  background-repeat: repeat;*/
   max-height: 100%; 
   overflow-y: auto
 }

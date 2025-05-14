@@ -3,7 +3,25 @@ components_by_slot:
   - data_bindings: []
     layout_properties: {}
     name: text_box_1
-    properties: {text: '         Connections'}
+    properties: {text: Some clickable list of connections to interact with}
     type: TextBox
+  - event_bindings: {click: button_1_click}
+    layout_properties: {}
+    name: button_1
+    properties: {text: SQL Query}
+    type: Button
+  - layout_properties: {}
+    name: text_area_1
+    properties: {text: Click the button to convert a sql table from a query to a table resented in markdown language}
+    type: TextArea
+  - layout_properties: {}
+    name: rich_text_1
+    properties: {content: Click the button to replace this text with data}
+    type: RichText
+  title_slot:
+  - layout_properties: {}
+    name: label_1
+    properties: {text: Connections}
+    type: Label
 is_package: true
 layout: {type: 'form:Layouts.AppLayouts.Primary'}
