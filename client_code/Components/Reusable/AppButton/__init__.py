@@ -32,6 +32,7 @@ class AppButton(AppButtonTemplate):
   def set_appearance(self, value):
     self.dom_nodes['app-button'].classList.toggle('primary', False)
     self.dom_nodes['app-button'].classList.toggle('secondary', False)
+    self.dom_nodes['app-button'].classList.toggle('list-button', False)
     self.dom_nodes['app-button'].classList.toggle(value, True)
   appearance = Properties.property_with_callback(set_appearance)
   
