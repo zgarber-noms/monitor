@@ -66,6 +66,7 @@ components_by_slot:
       name: calendar_1
       properties: {primary_fill: '', secondary_fill: 'theme:Primary 400', size: 31}
       type: form:Components.Icons.Calendar
+    event_bindings: {click: jobs_link_click}
     layout_properties: {}
     name: jobs_link
     properties: {name: jobs, text: Jobs}

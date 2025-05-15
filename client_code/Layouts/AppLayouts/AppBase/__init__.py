@@ -36,4 +36,7 @@ class AppBase(AppBaseTemplate):
 
   def monitor_link_1_click(self, **event_args):
     navigate("monitor")
+
+  def jobs_link_click(self, **event_args):
+    navigate("jobs")
   
