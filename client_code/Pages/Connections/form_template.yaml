@@ -1,4 +1,14 @@
 components_by_slot:
+  primary_scrolling_slot:
+  - components:
+    - layout_properties: {full_width_row: true, grid_position: 'GKWEMU,AWZRZD'}
+      name: rich_text_1
+      properties: {content: Click the button to replace this text with data, role: horizontal_scroll}
+      type: RichText
+    layout_properties: {}
+    name: column_panel_1
+    properties: {}
+    type: ColumnPanel
   primary_static_slot:
   - data_bindings: []
     layout_properties: {}
@@ -22,10 +32,6 @@ components_by_slot:
     name: text_area_1
     properties: {}
     type: TextArea
-  - layout_properties: {}
-    name: rich_text_1
-    properties: {content: Click the button to replace this text with data}
-    type: RichText
   title_slot:
   - layout_properties: {}
     name: label_1

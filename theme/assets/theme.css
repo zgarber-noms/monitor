@@ -109,6 +109,14 @@
   right: 30px;
 }
 
+.anvil-role-horizontal_scroll {
+  max-height: calc(100vh - 9rem);
+  
+  max-width: 98%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
 /* Component: CheckBox */
 .checkbox input {
   -webkit-appearance: none;

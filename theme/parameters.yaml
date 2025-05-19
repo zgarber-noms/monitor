@@ -94,3 +94,4 @@ roles:
 - {name: bottom-border}
 - {name: new-ticket-select-component}
 - {name: new-ticket-text-component}
+- {name: horizontal_scroll}

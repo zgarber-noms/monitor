@@ -22,11 +22,11 @@ class Connections(ConnectionsTemplate):
     schema = self.schema_name_input.text
     print(f'Table text : {table} \n SCh')
     #x= Data.df_as_markdown(table, schema)
-    if not table.text:
+    if not table:
       table = 'Salesforce_tmp_Providers_with_term_dates'
-    if not schema.text:
+    if not schema:
       schema = 'NOMSWorkSpace'
       print(f'Schema {schema} \nTable {table}')
     self.text_area_1.text = f'Showing Data from Caboodle Table [{schema}].[{table}]'  
-    x= anvil.server.call("get_data_from_caboodle", table, '')
+    x= anvil.server.call("get_data_from_caboodle", table, schema)
     self.rich_text_1.content = x
