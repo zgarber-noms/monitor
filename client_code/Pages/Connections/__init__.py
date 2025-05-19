@@ -20,12 +20,13 @@ class Connections(ConnectionsTemplate):
     """This method is called when the button is clicked"""
     table = self.table_name_input.text
     schema = self.schema_name_input.text
-    
+    print(f'Table text : {table} \n SCh')
     #x= Data.df_as_markdown(table, schema)
-    if not table:
+    if not table.text:
       table = 'Salesforce_tmp_Providers_with_term_dates'
-    if not schema:
+    if not schema.text:
       schema = 'NOMSWorkSpace'
+      print(f'Schema {schema} \nTable {table}')
     self.text_area_1.text = f'Showing Data from Caboodle Table [{schema}].[{table}]'  
     x= anvil.server.call("get_data_from_caboodle", table, '')
     self.rich_text_1.content = x
