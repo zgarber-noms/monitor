@@ -110,9 +110,9 @@
 }
 
 .anvil-role-horizontal_scroll {
-  max-height: calc(100vh - 9rem);
+  max-height: calc(75vh - 9rem);
   
-  max-width: 98%;
+  max-width: 93vw !important;
   overflow-y: scroll;
   overflow-x: scroll;
 }
