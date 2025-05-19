@@ -12,7 +12,7 @@ components_by_slot:
     type: Button
   - layout_properties: {}
     name: table_name_input
-    properties: {placeholder: Enter Caboodle Table Name}
+    properties: {placeholder: Enter Caboodle Table Name, text: ''}
     type: TextBox
   - layout_properties: {}
     name: schema_name_input

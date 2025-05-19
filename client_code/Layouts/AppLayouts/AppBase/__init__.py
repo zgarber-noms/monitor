@@ -2,6 +2,7 @@ from ._anvil_designer import AppBaseTemplate
 import anvil.users
 from ....utils.Navigation import navigate
 from anvil import *
+import anvil.server
 
 class AppBase(AppBaseTemplate):
   def __init__(self, **properties):

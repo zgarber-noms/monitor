@@ -3,6 +3,7 @@ from .utils.Navigation import navigate
 from anvil import set_default_error_handling
 import anvil.users
 from anvil import *
+import anvil.server
 
 # On Authentication failure, navigates back to login back. Throw error as usual for any other type of error
 def error_handler(err):

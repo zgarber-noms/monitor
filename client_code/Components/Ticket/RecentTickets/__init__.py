@@ -1,3 +1,4 @@
+import anvil.server
 from ._anvil_designer import RecentTicketsTemplate
 
 class RecentTickets(RecentTicketsTemplate):

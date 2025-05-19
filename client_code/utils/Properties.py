@@ -1,4 +1,5 @@
 from anvil import *
+import anvil.server
 from anvil.property_utils import set_element_spacing
 
 class CustomProperty(property):

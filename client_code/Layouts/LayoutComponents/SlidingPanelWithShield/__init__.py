@@ -1,3 +1,4 @@
+import anvil.server
 from ._anvil_designer import SlidingPanelWithShieldTemplate
 from ....utils import Properties, emitter
 

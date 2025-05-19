@@ -186,3 +186,4 @@ services:
   source: /runtime/services/anvil/email.yml
 startup: {module: StartUp, type: module}
 startup_form: null
+uplink_visible: true

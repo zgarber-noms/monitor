@@ -1,5 +1,6 @@
 from ._anvil_designer import AutocompleteTemplate
 from anvil import *
+import anvil.server
 
 class Autocomplete(AutocompleteTemplate):
   def __init__(self, **properties):
