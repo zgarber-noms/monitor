@@ -40,4 +40,7 @@ class AppBase(AppBaseTemplate):
 
   def jobs_link_click(self, **event_args):
     navigate("jobs")
+
+  def nav_link_1_click(self, **event_args):
+    navigate
   

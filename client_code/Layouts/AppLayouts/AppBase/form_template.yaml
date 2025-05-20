@@ -81,6 +81,16 @@ components_by_slot:
     name: connections_link
     properties: {name: connections, text: Connections}
     type: form:Components.NavLink
+  - components:
+    - layout_properties: {slot: navlink-icon-slot}
+      name: payers_1
+      properties: {primary_fill: 'theme:Primary 300', size: 30}
+      type: form:Components.Icons.Payers
+    event_bindings: {click: nav_link_1_click}
+    layout_properties: {}
+    name: nav_link_1
+    properties: {text: Payers}
+    type: form:Components.NavLink
   - layout_properties: {}
     name: rosters_link_1
     properties: {name: rosters, text: Rosters}

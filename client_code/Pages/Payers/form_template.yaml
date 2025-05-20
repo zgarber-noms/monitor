@@ -1,0 +1,93 @@
+components_by_slot:
+  form_scrolling_slot: []
+  form_static_slot:
+  - components:
+    - name: button_1
+      properties: {text: button_1}
+      type: Button
+    - components:
+      - layout_properties: {slot: button-text-slot}
+        name: label_1
+        properties: {background: '', font_size: 22, foreground: 'theme:NOMS Blue Very Dark', text: Anthem}
+        type: Label
+      name: list_option_button_1
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    - components:
+      - layout_properties: {slot: button-text-slot}
+        name: label_2
+        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Devoted}
+        type: Label
+      name: list_option_button_3
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    - components:
+      - data_bindings: []
+        layout_properties: {slot: button-text-slot}
+        name: label_3
+        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: MMOH}
+        type: Label
+      name: list_option_button_2
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    - components:
+      - layout_properties: {slot: button-text-slot}
+        name: label_4
+        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Luminare}
+        type: Label
+      name: list_option_button_4
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    - components:
+      - layout_properties: {slot: button-text-slot}
+        name: label_5
+        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Aetna}
+        type: Label
+      name: list_option_button_5
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    - components:
+      - layout_properties: {slot: button-text-slot}
+        name: label_6
+        properties: {font_size: 20, text: '...'}
+        type: Label
+      name: list_option_button_6
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    layout_properties: {}
+    name: linear_panel_1
+    properties: {}
+    type: LinearPanel
+  primary_scrolling_slot: []
+  primary_static_slot:
+  - components: []
+    layout_properties: {}
+    name: rich_text_1
+    properties:
+      content: "# Overview:\n\n## <Payer or Resource to monitor>\n\n### Static details (description, etc...) \n#### This screen should its own component embedded here, where the list on th left will call a function to populate said component when clicked\n\n"
+    type: RichText
+  - layout_properties: {}
+    name: spacer_1
+    properties: {height: 32, spacing_above: large, spacing_below: large}
+    type: Spacer
+  - layout_properties: {}
+    name: rich_text_2
+    properties:
+      content: |-
+        ### Some Data...
+        #### More Details
+    type: RichText
+  - components:
+    - name: repeating_panel_1
+      properties: {item_template: Pages.Monitor.RowTemplate4}
+      type: RepeatingPanel
+    layout_properties: {}
+    name: data_grid_1
+    properties:
+      columns:
+      - {data_key: column_1, id: JKSDUP, title: Column 1}
+      - {data_key: column_2, id: VJQQOR, title: Column 2}
+      - {data_key: column_3, id: OJLQEN, title: Column 3}
+    type: DataGrid
+is_package: true
+layout: {type: 'form:Layouts.AppLayouts.PrimaryOnRight'}
