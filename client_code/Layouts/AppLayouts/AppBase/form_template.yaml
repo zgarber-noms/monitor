@@ -82,6 +82,14 @@ components_by_slot:
     properties: {name: connections, text: Connections}
     type: form:Components.NavLink
   - layout_properties: {}
+    name: label_2
+    properties: {}
+    type: Label
+  - layout_properties: {}
+    name: nav_link_1
+    properties: {}
+    type: form:Components.NavLink
+  - layout_properties: {}
     name: rosters_link_1
     properties: {name: rosters, text: Rosters}
     type: form:Components.NavLink
