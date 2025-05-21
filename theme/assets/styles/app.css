@@ -113,7 +113,7 @@ This for a blank page that holds generic content
 .form-panel {
   box-shadow: 1px 0px 35px 8px var(--grey-050);
   background: var(--white);
-  width: 430px;
+  width: 100%;
   position: relative;
 }
 .details-panel {
