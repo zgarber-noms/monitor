@@ -2,13 +2,10 @@ components_by_slot:
   form_scrolling_slot: []
   form_static_slot:
   - components:
-    - name: button_1
-      properties: {text: button_1}
-      type: Button
     - components:
       - layout_properties: {slot: button-text-slot}
         name: label_1
-        properties: {background: '', font_size: 22, foreground: 'theme:NOMS Blue Very Dark', role: null, text: Anthem}
+        properties: {align: center, background: '', font_size: 22, foreground: 'theme:NOMS Blue Very Dark', role: null, spacing_above: none, spacing_below: none, text: Anthem}
         type: Label
       name: list_option_button_1
       properties: {}
@@ -16,7 +13,7 @@ components_by_slot:
     - components:
       - layout_properties: {slot: button-text-slot}
         name: label_2
-        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Devoted}
+        properties: {align: center, font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Devoted}
         type: Label
       name: list_option_button_3
       properties: {}
@@ -25,7 +22,7 @@ components_by_slot:
       - data_bindings: []
         layout_properties: {slot: button-text-slot}
         name: label_3
-        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: MMOH}
+        properties: {align: center, font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: MMOH}
         type: Label
       name: list_option_button_2
       properties: {}
@@ -33,7 +30,7 @@ components_by_slot:
     - components:
       - layout_properties: {slot: button-text-slot}
         name: label_4
-        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Luminare}
+        properties: {align: center, font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Luminare}
         type: Label
       name: list_option_button_4
       properties: {}
@@ -41,7 +38,7 @@ components_by_slot:
     - components:
       - layout_properties: {slot: button-text-slot}
         name: label_5
-        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Aetna}
+        properties: {align: center, font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Aetna}
         type: Label
       name: list_option_button_5
       properties: {}
@@ -49,7 +46,7 @@ components_by_slot:
     - components:
       - layout_properties: {slot: button-text-slot}
         name: label_6
-        properties: {font_size: 20, role: null, text: '...'}
+        properties: {align: center, font_size: 20, role: null, text: '...'}
         type: Label
       name: list_option_button_6
       properties: {}
@@ -65,5 +62,5 @@ components_by_slot:
     properties: {}
     type: form:Layouts.LayoutComponents.Payer_Information
 is_package: true
-layout: {type: 'form:Layouts.AppLayouts.PrimaryOnRight'}
+layout: {type: 'form:Layouts.AppLayouts.OptionPrimaryOnRight'}
 slots: {}

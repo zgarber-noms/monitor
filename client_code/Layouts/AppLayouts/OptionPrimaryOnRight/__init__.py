@@ -8,7 +8,7 @@ class OptionPrimaryOnRight(OptionPrimaryOnRightTemplate):
   def __init__(self, **properties):
     self.init_components(**properties)
     form_container = self.side_form_1.dom_nodes['form-container']
-    form_container.style.width = '50px'
+    form_container.style.width = '250px'
     form_container.style.background = "none"
     form_container.style.position = "relative"
     form_container.style.zIndex = "1"
