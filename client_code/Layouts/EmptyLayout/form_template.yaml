@@ -1,0 +1,19 @@
+components: []
+container:
+  properties:
+    html: |2
+
+      <div class="content-area">
+        <div class="content-area" anvil-slot="main-content-slot" style="padding: 30px;">
+          <p anvil-if-slot-empty="main-content-slot" style="padding: 30px;">
+            Page Content Goes here
+          </p>
+        </div>
+      </div>
+  type: HtmlTemplate
+is_package: true
+slots:
+  slot_1:
+    index: 0
+    set_layout_properties: {slot: main-content-slot}
+    target: {name: '', type: container}

@@ -3,6 +3,10 @@
 .anvil-role-w-full {
   width: 100%;
 }
+
+.anvil-role-w-fullvw {
+  width: 100vw;
+}
 .anvil-role-h-full {
   height: 100%;
 }

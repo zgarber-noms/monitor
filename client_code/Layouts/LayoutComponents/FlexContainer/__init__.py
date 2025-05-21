@@ -8,5 +8,6 @@ class FlexContainer(FlexContainerTemplate):
     self.init_components(**properties)
  
   def set_use_background(self, value):
-    self.dom_nodes['main-content-section'].style.backgroundImage = "url('_/theme/resources/grey-squiggles.png')" if value else ""
+    #self.dom_nodes['main-content-section'].style.backgroundImage = "url('_/theme/resources/grey-squiggles.png')" if value else ""
+    pass
   use_background = Properties.property_with_callback(set_use_background)

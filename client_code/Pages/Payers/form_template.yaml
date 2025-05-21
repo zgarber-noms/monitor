@@ -1,0 +1,69 @@
+components_by_slot:
+  form_scrolling_slot: []
+  form_static_slot:
+  - components:
+    - name: button_1
+      properties: {text: button_1}
+      type: Button
+    - components:
+      - layout_properties: {slot: button-text-slot}
+        name: label_1
+        properties: {background: '', font_size: 22, foreground: 'theme:NOMS Blue Very Dark', text: Anthem}
+        type: Label
+      name: list_option_button_1
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    - components:
+      - layout_properties: {slot: button-text-slot}
+        name: label_2
+        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Devoted}
+        type: Label
+      name: list_option_button_3
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    - components:
+      - data_bindings: []
+        layout_properties: {slot: button-text-slot}
+        name: label_3
+        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: MMOH}
+        type: Label
+      name: list_option_button_2
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    - components:
+      - layout_properties: {slot: button-text-slot}
+        name: label_4
+        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Luminare}
+        type: Label
+      name: list_option_button_4
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    - components:
+      - layout_properties: {slot: button-text-slot}
+        name: label_5
+        properties: {font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Aetna}
+        type: Label
+      name: list_option_button_5
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    - components:
+      - layout_properties: {slot: button-text-slot}
+        name: label_6
+        properties: {font_size: 20, text: '...'}
+        type: Label
+      name: list_option_button_6
+      properties: {}
+      type: form:Components.Reusable.ListOptionButton
+    layout_properties: {}
+    name: linear_panel_1
+    properties: {visible: true}
+    type: LinearPanel
+  primary_scrolling_slot: []
+  primary_static_slot:
+  - layout_properties: {}
+    name: payer_information_1
+    properties: {}
+    type: form:Layouts.LayoutComponents.Payer_Information
+is_package: true
+layout: {type: 'form:Layouts.AppLayouts.PrimaryOnRight'}
+slots: {}

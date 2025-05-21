@@ -36,6 +36,9 @@ nav_dic = {
   'home': {
     'active': 'home',
     'form_name': 'Pages.Home' } ,
+  'payers': {
+    'active': 'payers',
+    'form_name': 'Pages.Payers' } ,
 }
 
 def navigate(page, **page_props):    

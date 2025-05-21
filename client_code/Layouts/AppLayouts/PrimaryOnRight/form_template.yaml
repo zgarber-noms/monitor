@@ -30,13 +30,13 @@ slots:
     index: 0
     set_layout_properties: {slot: form-content-static-slot}
     target: {name: side_form_1, type: container}
-  primary_scrolling_slot:
-    index: 0
-    set_layout_properties: {slot: primary-content-slot}
-    target: {name: primary_content_1, type: container}
   primary_static_slot:
     index: 0
     set_layout_properties: {slot: primary-content-static-slot}
+    target: {name: primary_content_1, type: container}
+  slot_1:
+    index: 0
+    set_layout_properties: {slot: primary-content-slot}
     target: {name: primary_content_1, type: container}
   title_slot:
     index: 0
