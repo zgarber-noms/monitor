@@ -7,6 +7,11 @@
 .anvil-role-w-fullvw {
   width: 100vw;
 }
+
+.content-width-with-options-panel{
+  width: 100px !important;
+  max-width: 5vw !important;
+}
 .anvil-role-h-full {
   height: 100%;
 }
