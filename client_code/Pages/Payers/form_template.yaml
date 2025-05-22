@@ -40,7 +40,8 @@ components_by_slot:
         name: label_5
         properties: {align: center, font_size: 20, foreground: 'theme:NOMS Blue Very Dark', text: Aetna}
         type: Label
-      name: list_option_button_5
+      event_bindings: {click: aetna_button_click}
+      name: aetna_button
       properties: {}
       type: form:Components.Reusable.ListOptionButton
     - components:

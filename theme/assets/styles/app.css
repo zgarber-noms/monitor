@@ -32,7 +32,7 @@ This for a blank page that holds generic content
 */
 .content-area{
   display: flex;
-  background-color: var( --grey-100);
+  background-color: var( --Background_Blue);
   color: var(--primary-300);
   position: relative;
   height: 80vh;

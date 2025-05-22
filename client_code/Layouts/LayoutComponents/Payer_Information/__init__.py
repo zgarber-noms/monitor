@@ -7,7 +7,10 @@ import anvil.users
 
 class Payer_Information(Payer_InformationTemplate):
   def __init__(self, **properties):
+
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    
+    print('p')
+    print(self.parent)
     # Any code you write here will run before the form opens.
+

@@ -62,6 +62,7 @@
   --NOMS_Muted_blue: %color:NOMS Muted Blue%;
   --NOMS_Faint_Blue: %color:NOMS Faint Blue%;
   --Background_Blue: %color:Background Blue%;
+  --Background_Blue_Light: %color:Background Blue Light%;
 }
 
 /* Customise the loading spinner */

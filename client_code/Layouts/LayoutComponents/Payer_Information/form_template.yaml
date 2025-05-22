@@ -1,17 +1,21 @@
 components_by_slot:
   slot_1:
   - components:
-    - name: repeating_panel_1
-      properties: {item_template: Layouts.LayoutComponents.Payer_Information.RowTemplate6}
-      type: RepeatingPanel
+    - data_bindings:
+      - {code: 'self.item[''text_box'']', property: text, writeback: false}
+      name: label_1
+      properties: {}
+      type: Label
+    - name: text_area_2
+      properties: {}
+      type: TextArea
+    - name: text_area_3
+      properties: {}
+      type: TextArea
     layout_properties: {}
-    name: data_grid_1
-    properties:
-      columns:
-      - {data_key: column_1, expand: false, id: JKSDUP, title: Column 1, width: 126}
-      - {data_key: column_2, expand: false, id: VJQQOR, title: Column 2, width: 181}
-      - {data_key: column_3, expand: false, id: OJLQEN, title: Column 3, width: 448.7999267578125}
-    type: DataGrid
+    name: linear_panel_1
+    properties: {}
+    type: LinearPanel
 custom_component: true
 is_package: true
 layout: {type: 'form:Layouts.EmptyLayout'}
