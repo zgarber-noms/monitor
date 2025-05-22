@@ -8,21 +8,10 @@ components_by_slot:
     name: data_grid_1
     properties:
       columns:
-      - {data_key: column_1, id: JKSDUP, title: Column 1}
-      - {data_key: column_2, id: VJQQOR, title: Column 2}
-      - {data_key: column_3, id: OJLQEN, title: Column 3}
+      - {data_key: column_1, expand: false, id: JKSDUP, title: Column 1, width: 126}
+      - {data_key: column_2, expand: false, id: VJQQOR, title: Column 2, width: 181}
+      - {data_key: column_3, expand: false, id: OJLQEN, title: Column 3, width: 448.7999267578125}
     type: DataGrid
-  - components: []
-    layout_properties: {}
-    name: linear_panel_1
-    properties: {role: content-width-with-options-panel}
-    type: LinearPanel
-  - components: []
-    data_bindings: []
-    layout_properties: {}
-    name: column_panel_1
-    properties: {role: content-width-with-options-panel}
-    type: ColumnPanel
 custom_component: true
 is_package: true
 layout: {type: 'form:Layouts.EmptyLayout'}
