@@ -12,6 +12,10 @@ components_by_slot:
     - name: text_area_3
       properties: {}
       type: TextArea
+    - event_bindings: {click: button_1_click}
+      name: button_1
+      properties: {text: button_1}
+      type: Button
     layout_properties: {}
     name: linear_panel_1
     properties: {}

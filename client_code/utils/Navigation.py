@@ -39,6 +39,13 @@ nav_dic = {
   'payers': {
     'active': 'payers',
     'form_name': 'Pages.Payers' } ,
+
+  'payer_information': {
+    #'active': 'payer',
+    'form_name': 'Layouts.LayoutComponents.Payer_Information' },
+  'payer_information_2': {
+    #'active': 'payer',
+    'form_name': 'Layouts.LayoutComponents.Payer_Information_2' },
 }
 
 def navigate(page, **page_props):    
