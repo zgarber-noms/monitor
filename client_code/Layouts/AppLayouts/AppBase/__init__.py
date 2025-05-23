@@ -43,5 +43,5 @@ class AppBase(AppBaseTemplate):
 
   def nav_link_1_click(self, **event_args):
     
-    navigate('payers')
+    navigate('default_payer_information')
   

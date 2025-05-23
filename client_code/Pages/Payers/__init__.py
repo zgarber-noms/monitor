@@ -14,12 +14,12 @@ class Payers(PayersTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    
 
     # Any code you write here will run before the form opens.
 
   def aetna_button_click(self, **event_args):
-    navigate('default_payer_information')
-
+    
+    navigate('aetna_payer_information')
   def get_payer_information_data(self):
     return self.item['text_box']
