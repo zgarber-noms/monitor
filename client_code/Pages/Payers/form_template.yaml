@@ -57,11 +57,11 @@ components_by_slot:
     properties: {role: w-full, visible: true}
     type: LinearPanel
   primary_scrolling_slot: []
-  primary_static_slot:
-  - layout_properties: {}
-    name: payer_information_1
-    properties: {}
-    type: form:Layouts.LayoutComponents.Payer_Information
+  primary_static_slot: []
 is_package: true
 layout: {type: 'form:Layouts.AppLayouts.OptionPrimaryOnRight'}
-slots: {}
+slots:
+  primary_static_slot:
+    index: 0
+    set_layout_properties: {}
+    target: {name: primary_static_slot, type: slot}

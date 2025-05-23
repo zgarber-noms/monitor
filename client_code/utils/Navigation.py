@@ -46,8 +46,16 @@ nav_dic = {
   'payer_information_2': {
     #'active': 'payer',
     'form_name': 'Layouts.LayoutComponents.Payer_Information_2' },
-}
+  
+  'default_payer_information': {
+    'active': 'default_payer_information',
+    'form_name': 'Pages.DefaultPayerInformation' },
 
+  'aetna_payer_information': {
+    'active': 'aetna_payer_information',
+    'form_name': 'Pages.AetnaPayerInformation' },
+
+}
 def navigate(page, **page_props):    
   open_form(nav_dic[page]['form_name'], **page_props)
   if nav_dic[page]['active']: 
