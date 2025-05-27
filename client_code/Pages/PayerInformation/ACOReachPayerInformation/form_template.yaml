@@ -25,7 +25,8 @@ components_by_slot:
         layout_properties: {grid_position: 'CWEXHH,RKNFRI'}
         name: rich_text_2
         properties:
-          content: "### Rosters:   \n\n|  |  |\n| ------------- |:-------------:|\n| Latest Roster Received: {previous_received_roster} | Latest Roster Ingested: {previous_received_roster}  |\n| left bar      | right bar     |\n| left baz      | right baz     |\n"
+          content: |2+
+
           role: null
         type: RichText
       - layout_properties: {grid_position: 'QPDDDN,BSUOLI'}
