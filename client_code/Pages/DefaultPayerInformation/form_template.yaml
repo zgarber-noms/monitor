@@ -1,8 +1,0 @@
-components_by_slot:
-  primary_static_slot:
-  - layout_properties: {}
-    name: payer_information_1
-    properties: {}
-    type: form:Layouts.LayoutComponents.Payer_Information
-is_package: true
-layout: {type: 'form:Pages.Payers'}
