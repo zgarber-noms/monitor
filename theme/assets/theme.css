@@ -110,7 +110,9 @@
   bottom: auto;
   right: 30px;
 }
-
+.anvil-role-Background_Blue{
+  background-color: var( --Background_Blue);
+}
 .anvil-role-horizontal_scroll {
   max-height: calc(75vh - 9rem);
   

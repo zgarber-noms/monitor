@@ -1,10 +1,6 @@
 components_by_slot:
   primary_static_slot:
   - components:
-    - layout_properties: {}
-      name: rich_text_1
-      properties: {content: ''}
-      type: RichText
     - components:
       - layout_properties: {full_width_row: false, grid_position: 'IXMLQV,BWNTUP'}
         name: rich_text_4
@@ -21,18 +17,15 @@ components_by_slot:
         type: Spacer
       - components:
         - data_bindings:
-          - {code: 'self.item[''test_var'']', property: text, writeback: false}
-          layout_properties: {slot: test_var}
+          - {code: 'self.item['''']', property: text, writeback: false}
+          layout_properties: {slot: previous_received_roster}
           name: label_1
           properties: {}
           type: Label
         layout_properties: {grid_position: 'CWEXHH,RKNFRI'}
         name: rich_text_2
         properties:
-          content: |-
-            ### Rosters:
-
-            {test_var}
+          content: "### Rosters:   \n\n|  |  |\n| ------------- |:-------------:|\n| Latest Roster Received: {previous_received_roster} | Latest Roster Ingested: {previous_received_roster}  |\n| left bar      | right bar     |\n| left baz      | right baz     |\n"
           role: null
         type: RichText
       - layout_properties: {grid_position: 'QPDDDN,BSUOLI'}
@@ -41,7 +34,7 @@ components_by_slot:
         type: RichText
       layout_properties: {}
       name: column_panel_1
-      properties: {role: null}
+      properties: {role: Background_Blue, spacing_below: none}
       type: ColumnPanel
     layout_properties: {}
     name: linear_panel_1

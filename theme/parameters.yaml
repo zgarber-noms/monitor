@@ -99,3 +99,4 @@ roles:
 - {name: horizontal_scroll}
 - {name: w-fullvw}
 - {name: content-width-with-options-panel}
+- {name: Background_Blue}

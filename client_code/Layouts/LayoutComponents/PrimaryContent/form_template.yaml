@@ -1,7 +1,7 @@
 components: []
 container:
   properties:
-    html: "<div anvil-name=\"primary-container\" class=\"section-containers main-panel\" >          \n  <div anvil-name=\"primary-content-static\" class=\"static-section\" anvil-slot=\"primary-content-static-slot\" ></div>\n  <div anvil-name=\"primary-content\" class=\"scrolling-section\" anvil-slot=\"primary-content-slot\" ></div>\n</div>"
+    html: "<div anvil-name=\"primary-container\" class=\"section-containers main-panel\" >          \n  <div anvil-name=\"primary-content-static\" class=\"static-section\" anvil-slot=\"primary-content-static-slot\" ></div>\n  <div class='content-area'>\n  <div anvil-name=\"primary-content\" class=\"scrolling-section\" anvil-slot=\"primary-content-slot\" ></div>\n  </div>\n  </div>"
     role: flex-1
   type: HtmlTemplate
 custom_component: true
