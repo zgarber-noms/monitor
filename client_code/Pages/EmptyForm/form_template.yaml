@@ -1,0 +1,3 @@
+custom_component: true
+is_package: true
+layout: {type: 'form:Layouts.EmptyLayout'}
