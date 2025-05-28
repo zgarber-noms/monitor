@@ -46,3 +46,10 @@ class RosterInformation(RosterInformationTemplate):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.rich_text_1.visible = False
+
+  def show_downloaded_files_drop_down(self):
+    self.
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.data_grid_1.visible = False

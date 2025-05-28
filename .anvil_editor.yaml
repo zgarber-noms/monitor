@@ -96,6 +96,7 @@ unique_ids:
     Pages.PayerInformation.LuminarePayerInformation: '1748355583682765113050343.7621'
     Pages.PayerInformation.MMOHPayerInformation: '1748356273025854715145898.6276'
     Pages.PayerInformation.RosterInformation: '1748370828096255375352570.57397'
+    Pages.PayerInformation.RosterInformation.RowTemplate7: '1748451164580801375894055.5546'
     Pages.Payers: '1747754988163860190529713.0571'
     Pages.Rosters: '1747247450253349504667038.1395'
     Pages.Rosters.RowTemplate5: '1747247730199924382079602.4506'
