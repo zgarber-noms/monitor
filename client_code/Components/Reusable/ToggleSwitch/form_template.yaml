@@ -1,0 +1,7 @@
+components: []
+container:
+  properties:
+    html: |
+      <link href="_/theme/toggle-switch.css" rel="stylesheet" />
+  type: HtmlTemplate
+is_package: true

@@ -26,7 +26,7 @@ class RosterInformation(RosterInformationTemplate):
   def __init__(self, rosterDownloaded=None, rosterIngested=None, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    self.downloaded_files_grid.visible = False
     '''
     #self.item is bounded to the UI elements
     self.item['rosterLastDownloadedDate'] = rosterDownloaded['Date']
@@ -48,8 +48,16 @@ class RosterInformation(RosterInformationTemplate):
     self.rich_text_1.visible = False
 
   def show_downloaded_files_drop_down(self):
-    self.
+    pass
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.data_grid_1.visible = False
+    if self.downloaded_files_grid.visible:
+      self.downloaded_files_grid.visible = False
+
+    else:
+      self.downloaded_files_grid.visible = True
+
+  def radio_button_1_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    self.downloaded_files_grid.visible = not self.downloaded_files_grid.visible
