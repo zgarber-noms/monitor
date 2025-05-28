@@ -28,10 +28,10 @@ components:
     name: spacer_1
     properties: {height: 32}
     type: Spacer
-  - layout_properties: {grid_position: 'APGHYB,SWPFPB BUCUIO,OPUYEQ'}
-    name: toggle_switch_1
+  - layout_properties: {grid_position: 'BUCUIO,ZWEXKF'}
+    name: toggleswitch_1
     properties: {}
-    type: form:Components.Reusable.ToggleSwitch
+    type: form:dep_s34g7ek4xomoo:Toggleswitch
   - components:
     - name: repeating_panel_1
       properties: {item_template: Pages.PayerInformation.RosterInformation.RowTemplate7}

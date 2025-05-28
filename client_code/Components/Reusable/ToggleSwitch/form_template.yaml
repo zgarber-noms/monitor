@@ -3,4 +3,16 @@ container:
   properties: {html: '@theme:styles/toggle-switch.html'}
   type: HtmlTemplate
 custom_component: true
+events:
+- {default_event: true, name: x_change}
+- {name: x_show}
+- {name: x_hide}
 is_package: true
+properties:
+- {default_binding_prop: true, default_value: round, important: true, name: shape, type: string}
+- {default_value: true, important: true, name: enabled, type: boolean}
+- {default_value: true, important: true, name: visible, type: boolean}
+- {default_value: false, important: true, name: checked, type: boolean}
+- {default_value: '', important: true, name: prop, type: string}
+- {default_value: small, important: true, name: spacing_above, type: string}
+- {default_value: small, important: true, name: spacing_below, type: string}
