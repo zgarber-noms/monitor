@@ -23,11 +23,11 @@ import anvil.users
         Calculates the perimeter of the rectangle
     """
 class RosterInformation(RosterInformationTemplate):
-  def __init__(self, rosterDownloaded, rosterIngested, **properties):
+  def __init__(self, rosterDownloaded=None, rosterIngested=None, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-
+    '''
     #self.item is bounded to the UI elements
     self.item['rosterLastDownloadedDate'] = rosterDownloaded['Date']
     self.item['rosterLastDownloadedName'] = rosterDownloaded['Name']
@@ -40,5 +40,9 @@ class RosterInformation(RosterInformationTemplate):
     
     self.item['rosterLastIngested'] = rosterIngested['']
     self.item['']
-
+    '''
     # Any code you write here will run before the form opens.
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_1.visible = False
