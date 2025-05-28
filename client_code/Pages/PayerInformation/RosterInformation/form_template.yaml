@@ -20,7 +20,7 @@ components:
       name: button_1
       properties: {text: button_1}
       type: Button
-    layout_properties: {grid_position: 'PEXDSX,DEAVFM'}
+    layout_properties: {grid_position: 'QQWKAZ,ECZSVB'}
     name: rich_text_1
     properties:
       content: "### Rosters:   \n\n|  |  | |\n| ------------- |:-------------:| :-------------:|\n| Latest Roster Downloaded:  |  {previous_received_roster} | {showallDownloaded} |\n| Latest Roster Ingested:  | {previous_ingested_roster}| |\n|  Latest        | right baz     | |"
