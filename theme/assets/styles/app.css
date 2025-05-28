@@ -2,6 +2,7 @@
 @import 'container-roles.css';
 @import 'custom-components.css';
 @import 'component-roles.css';
+@import 'toggle-switch.css';
 
 .login-main {
   display: flex;
