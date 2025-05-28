@@ -157,7 +157,10 @@ db_schema:
       type: string
     server: full
     title: Users
-dependencies: []
+dependencies:
+- dep_id: dep_s34g7ek4xomoo
+  resolution_hints: {app_id: 4JR4MYV667XE3Y6R, name: Clone of DEMO - Toggle Switch (v0.6 - live), package_name: DEMOToggleSwitch}
+  version: {branch: master}
 name: Monitor
 native_deps:
   head_html: |-
