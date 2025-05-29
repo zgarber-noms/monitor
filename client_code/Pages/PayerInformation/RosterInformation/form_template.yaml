@@ -22,7 +22,7 @@ components:
     type: RichText
   - layout_properties: {grid_position: 'BUCUIO,WOYEBF'}
     name: label_4
-    properties: {text: Files Downloaded}
+    properties: {bold: true, text: Files Downloaded}
     type: Label
   - layout_properties: {grid_position: 'BUCUIO,WOMWOY'}
     name: spacer_1
@@ -32,18 +32,6 @@ components:
     name: toggleswitch_1
     properties: {}
     type: form:dep_s34g7ek4xomoo:Toggleswitch
-  - components:
-    - name: repeating_panel_1
-      properties: {item_template: Pages.PayerInformation.RosterInformation.RowTemplate7}
-      type: RepeatingPanel
-    layout_properties: {grid_position: 'VBWUJI,FDIHFO'}
-    name: downloaded_files_grid
-    properties:
-      columns:
-      - {data_key: column_1, id: JKSDUP, title: Column 1}
-      - {data_key: column_2, id: VJQQOR, title: Column 2}
-      - {data_key: column_3, id: OJLQEN, title: Column 3}
-    type: DataGrid
   layout_properties: {grid_position: 'MTVXJQ,IWRORF'}
   name: column_panel_1
   properties: {}

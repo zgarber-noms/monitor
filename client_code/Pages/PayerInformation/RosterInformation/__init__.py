@@ -50,14 +50,4 @@ class RosterInformation(RosterInformationTemplate):
   def show_downloaded_files_drop_down(self):
     pass
 
-  def button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    if self.downloaded_files_grid.visible:
-      self.downloaded_files_grid.visible = False
 
-    else:
-      self.downloaded_files_grid.visible = True
-
-  def radio_button_1_clicked(self, **event_args):
-    """This method is called when this radio button is selected"""
-    self.downloaded_files_grid.visible = not self.downloaded_files_grid.visible
