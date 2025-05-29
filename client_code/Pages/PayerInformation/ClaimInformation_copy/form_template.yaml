@@ -18,7 +18,7 @@ components:
     layout_properties: {grid_position: 'QQWKAZ,ECZSVB'}
     name: rich_text_1
     properties:
-      content: "### Claims:   \n\n|  |  | |\n| ------------- |:-------------:| :-------------:|\n| Latest Roster Downloaded:  |  {previous_received_roster} | {showallDownloaded} |\n| Latest Roster Ingested:  | {previous_ingested_roster}| |\n|  Latest        | right baz     | |"
+      content: "### Claims:   \n\n|  |  | |\n| ------------- |:-------------:| :-------------:|\n| Latest Claim Downloaded:  |  {previous_received_claim} | {showallDownloaded} |\n| Latest Claim Ingested:  | {previous_ingested_claim}| |\n|  Latest        | right baz     | |"
     type: RichText
   - layout_properties: {grid_position: 'BUCUIO,WOYEBF'}
     name: label_4
