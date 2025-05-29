@@ -187,6 +187,6 @@ services:
 - client_config: {}
   server_config: {}
   source: /runtime/services/anvil/email.yml
-startup: {module: Pages.PayerInformation.ACOReachPayerInformation, type: form}
+startup: {module: Pages.Dataframe, type: form}
 startup_form: null
 uplink_visible: true
