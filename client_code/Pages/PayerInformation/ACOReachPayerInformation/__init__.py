@@ -12,6 +12,9 @@ class ACOReachPayerInformation(ACOReachPayerInformationTemplate):
     self.init_components(**properties)
     self.column_panel_1.add_component(RosterInformation())
     self.item['test_var'] = 'Test'
+    self.column_panel_1.add_component(
+      Data
+    )
     self.refresh_data_bindings(())
 
     # Any code you write here will run before the form opens.
