@@ -10,10 +10,7 @@ class Dataframe(DataframeTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     
-    df_col, df_dict = anvil.server.call('get_df_to_datagrid')
-    self.datagrid = DataGrid(columns=df_col)
-    self.datagrid.items = df_dict
-    self.column_panel_1.add_component(self.datagrid)
-
+    df_md = anvil.server.call('df_markdown')
+    self.rich_text_1.content = df_md
     
     # Any code you write here will run before the form opens.
