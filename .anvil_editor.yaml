@@ -91,6 +91,7 @@ unique_ids:
     Pages.PayerInformation.ACOReachPayerInformation: '1748357627982678392059062.6866'
     Pages.PayerInformation.AetnaPayerInformation: '1748023487115487120812523.4815'
     Pages.PayerInformation.AnthemPayerInformation: '1748351665951499704402231.9435'
+    Pages.PayerInformation.ClaimInformation: '1748523607809266814230382.84625'
     Pages.PayerInformation.DefaultPayerInformation: '1748022974639835222944219.8625'
     Pages.PayerInformation.DevotedPayerInformation: '1748351671010504876706716.16113'
     Pages.PayerInformation.HumanaPayerInformation: '1748356945206723403577842.4299'
