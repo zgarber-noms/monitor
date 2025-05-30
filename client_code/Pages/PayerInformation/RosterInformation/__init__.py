@@ -26,7 +26,7 @@ class RosterInformation(RosterInformationTemplate):
   def __init__(self, rosterDownloaded=None, rosterIngested=None, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.downloaded_files_grid.visible = False
+    #self.downloaded_files_grid.visible = False
     '''
     #self.item is bounded to the UI elements
     self.item['rosterLastDownloadedDate'] = rosterDownloaded['Date']
