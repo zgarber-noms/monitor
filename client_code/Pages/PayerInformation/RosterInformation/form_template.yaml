@@ -18,7 +18,7 @@ components:
     layout_properties: {grid_position: 'QQWKAZ,ECZSVB'}
     name: rich_text_1
     properties:
-      content: "### Rosters:   \n\n|  |  | |\n| ------------- |:-------------:| :-------------:|\n| Latest Roster Downloaded:  |  {previous_received_roster} | {showallDownloaded} |\n| Latest Roster Ingested:  | {previous_ingested_roster}| |\n|  Latest        | right baz     | |"
+      content: "### Rosters:   \n\n|  |  | |\n| ------------- |:-------------:| :-------------:|\n| Latest Roster Downloaded:  |  {previous_received_roster} | {previous_roster_size} |\n| Latest Roster Ingested:  | {previous_ingested_roster}| |\n| Latest RME File:  | {previous_rme_file}| |\n\n|  Latest        | right baz     | |"
     type: RichText
   - layout_properties: {grid_position: 'BUCUIO,WOYEBF'}
     name: label_4
