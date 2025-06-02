@@ -131,7 +131,7 @@ components_by_slot:
         properties:
           content: |-
             Last Updated: {rosterLastUpdated}
-            Previous Roster On Pye
+            Previous Uploaded File
         type: RichText
       - layout_properties: {grid_position: 'IYIWBG,UYDFVT'}
         name: spacer_2
