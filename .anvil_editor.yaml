@@ -40,6 +40,7 @@ unique_ids:
     Components.NavLink: '1709831814497749271032995.5685'
     Components.RailLetters: '1710252799839829384044885.219'
     Components.Reusable.AppButton: '1710167264100739145940436.2233'
+    Components.Reusable.HorizontalBar: '1749151122104349180349665.8823'
     Components.Reusable.ListOptionButton: '1747238979269346084257466.9257'
     Components.Reusable.Spacer: '1709904796158361870056317.1815'
     Components.Reusable.ToggleSwitch: '1748454768046536492482526.3702'

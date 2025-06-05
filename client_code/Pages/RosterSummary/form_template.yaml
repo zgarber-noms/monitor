@@ -6,19 +6,40 @@ components_by_slot:
         name: label_10
         properties: {bold: false, font_size: 32, text: 'Aetna:', underline: true}
         type: Label
-      - components: []
-        layout_properties: {grid_position: 'UVGQZD,EGTUYX'}
-        name: rich_text_5
-        properties: {}
-        type: RichText
-      - layout_properties: {grid_position: 'UVGQZD,CHAJVM'}
+      - layout_properties: {grid_position: 'ALUARR,BHNCJS'}
         name: Aetna_Symbol_Container
         properties: {}
         type: ColumnPanel
-      - layout_properties: {grid_position: 'SCKIKO,DDGPRM'}
-        name: rich_text_6
-        properties: {}
+      - components:
+        - layout_properties: {slot: Aetna_StatusLastUpdated}
+          name: label_4
+          properties: {}
+          type: Label
+        - layout_properties: {slot: Aetna_PROD_ODB_File}
+          name: label_11
+          properties: {}
+          type: Label
+        - layout_properties: {slot: Aetna_Status_datestamp}
+          name: label_12
+          properties: {}
+          type: Label
+        - layout_properties: {slot: new_Aetna_roster_check_datestamp}
+          name: label_13
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'UVGQZD,EGTUYX'}
+        name: rich_text_5
+        properties:
+          content: |
+            Roster Ingestion Status Last Updated: {Aetna_StatusLastUpdated}
+            Most Recent PROD-ODB RME File: {Aetna_PROD_ODB_File}
+            Last Roster Received: {Aetna_Status_datestamp}
+            Last Check for New Roster: {new_Aetna_roster_check_datestamp}
         type: RichText
+      - layout_properties: {grid_position: 'LFSDXH,YKVQFB'}
+        name: horizontal_bar_1
+        properties: {}
+        type: form:Components.Reusable.HorizontalBar
       name: Aetna_Panel
       properties: {}
       type: ColumnPanel
@@ -27,18 +48,40 @@ components_by_slot:
         name: label_3
         properties: {font_size: 32, text: ACO Reach, underline: true}
         type: Label
-      - layout_properties: {grid_position: 'NJXCAZ,NAAHCY'}
-        name: rich_text_11
-        properties: {}
-        type: RichText
-      - layout_properties: {grid_position: 'NJXCAZ,MCHNZB'}
+      - layout_properties: {grid_position: 'UYVVQJ,OCFOYR'}
         name: ACOReach_Symbol_Container
         properties: {}
         type: ColumnPanel
-      - layout_properties: {grid_position: 'OJJSZJ,SZMTVW'}
-        name: rich_text_12
-        properties: {}
+      - components:
+        - layout_properties: {slot: ACOReach_StatusLastUpdated}
+          name: label_14
+          properties: {}
+          type: Label
+        - layout_properties: {slot: ACOReach_PROD_ODB_File}
+          name: label_15
+          properties: {}
+          type: Label
+        - layout_properties: {slot: ACOReach_Status_datestamp}
+          name: label_16
+          properties: {}
+          type: Label
+        - layout_properties: {slot: new_ACOReach_roster_check_datestamp}
+          name: label_17
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'NJXCAZ,NAAHCY'}
+        name: rich_text_11
+        properties:
+          content: |
+            Roster Ingestion Status Last Updated: {ACOReach_StatusLastUpdated}
+            Most Recent PROD-ODB RME File: {ACOReach_PROD_ODB_File}
+            Last Roster Received: {ACOReach_Status_datestamp}
+            Last Check for New Roster: {new_ACOReach_roster_check_datestamp}
         type: RichText
+      - layout_properties: {grid_position: 'IGVSZV,ZSXXUB'}
+        name: horizontal_bar_2
+        properties: {}
+        type: form:Components.Reusable.HorizontalBar
       name: ACOReach_Panel
       properties: {}
       type: ColumnPanel
@@ -47,18 +90,32 @@ components_by_slot:
         name: label_2
         properties: {font_size: 32, text: 'Anthem Commercial:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'NHJIZG,MGIAIG'}
-        name: rich_text_10
-        properties: {}
-        type: RichText
-      - layout_properties: {grid_position: 'NHJIZG,EQVBMD'}
+      - layout_properties: {grid_position: 'MPTRXR,OGZEXI'}
         name: AnthemCommercial_Symbol_Conatiner
         properties: {}
         type: ColumnPanel
-      - layout_properties: {grid_position: 'EPDQDE,NTLMBD'}
-        name: rich_text_13
-        properties: {}
+      - components:
+        - layout_properties: {slot: AnthemComm_StatusLastUpdated}
+          name: label_18
+          properties: {}
+          type: Label
+        - layout_properties: {slot: AnthemComm_PROD_ODB_File}
+          name: label_19
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'NHJIZG,MGIAIG'}
+        name: rich_text_10
+        properties:
+          content: |
+            Roster Ingestion Status Last Updated: {AnthemComm_StatusLastUpdated}
+            Most Recent PROD-ODB RME File: {AnthemComm_PROD_ODB_File}
+            Last Roster Received: {AnthemComm_Status_datestamp}
+            Last Check for New Roster: {new_AnthemComm_roster_check_datestamp}
         type: RichText
+      - layout_properties: {grid_position: 'QNDICI,RZXKQM'}
+        name: horizontal_bar_3
+        properties: {}
+        type: form:Components.Reusable.HorizontalBar
       name: AnthemCommercial_Panel
       properties: {role: Background_Blue}
       type: ColumnPanel
@@ -67,18 +124,32 @@ components_by_slot:
         name: label_5
         properties: {font_size: 32, text: 'Anthem MA:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'GTWQIP,FOTZAF'}
-        name: rich_text_9
-        properties: {}
-        type: RichText
-      - layout_properties: {grid_position: 'GTWQIP,YUSFMC'}
+      - layout_properties: {grid_position: 'NRJREE,IQEJCX'}
         name: AnthemMA_Symbol_Conatiner
         properties: {}
         type: ColumnPanel
-      - layout_properties: {grid_position: 'FTGZLO,MDMFIH'}
-        name: rich_text_14
-        properties: {}
+      - components:
+        - layout_properties: {slot: AnthemMA_StatusLastUpdated}
+          name: label_22
+          properties: {}
+          type: Label
+        - layout_properties: {slot: AnthemMA_PROD_ODB_File}
+          name: label_23
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'GTWQIP,FOTZAF'}
+        name: rich_text_9
+        properties:
+          content: |
+            Roster Ingestion Status Last Updated: {AnthemMA_StatusLastUpdated}
+            Most Recent PROD-ODB RME File: {AnthemMA_PROD_ODB_File}
+            Last Roster Received: {AnthemMA_Status_datestamp}
+            Last Check for New Roster: {new_AnthemMA_roster_check_datestamp}
         type: RichText
+      - layout_properties: {grid_position: 'ZBFUKR,MVEPWV'}
+        name: horizontal_bar_7
+        properties: {}
+        type: form:Components.Reusable.HorizontalBar
       name: AnthemMA_Panel
       properties: {}
       type: ColumnPanel
@@ -87,18 +158,32 @@ components_by_slot:
         name: label_6
         properties: {font_size: 32, text: 'MMOH:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'LMYEGP,PIHPEX'}
-        name: rich_text_8
-        properties: {}
-        type: RichText
-      - layout_properties: {grid_position: 'LMYEGP,LNOXOJ'}
+      - layout_properties: {grid_position: 'VPROPW,GCJWXB'}
         name: MMOH_Symbol_Conatiner
         properties: {}
         type: ColumnPanel
-      - layout_properties: {grid_position: 'ODLTOY,LEQHAZ'}
-        name: rich_text_15
-        properties: {}
+      - components:
+        - layout_properties: {slot: MMOH_StatusLastUpdated}
+          name: label_26
+          properties: {}
+          type: Label
+        - layout_properties: {slot: MMOH_PROD_ODB_File}
+          name: label_27
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'LMYEGP,PIHPEX'}
+        name: rich_text_8
+        properties:
+          content: |
+            Roster Ingestion Status Last Updated: {MMOH_StatusLastUpdated}
+            Most Recent PROD-ODB RME File: {MMOH_PROD_ODB_File}
+            Last Roster Received: {MMOH_Status_datestamp}
+            Last Check for New Roster: {new_MMOH_roster_check_datestamp}
         type: RichText
+      - layout_properties: {grid_position: 'SHXAFM,HSFYJR'}
+        name: horizontal_bar_5
+        properties: {}
+        type: form:Components.Reusable.HorizontalBar
       name: MMOH_Panel
       properties: {}
       type: ColumnPanel
@@ -107,18 +192,45 @@ components_by_slot:
         name: label_7
         properties: {font_size: 32, text: 'Humana:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'YIQJGW,IFKKOW'}
-        name: rich_text_7
-        properties: {}
-        type: RichText
-      - layout_properties: {grid_position: 'YIQJGW,CCMYJD'}
+      - layout_properties: {grid_position: 'ASNYRX,GIJBSX'}
         name: Humana_Symbol_Conatiner
         properties: {}
         type: ColumnPanel
-      - layout_properties: {grid_position: 'CNANAG,APCYAU'}
-        name: rich_text_16
-        properties: {}
+      - components:
+        - layout_properties: {slot: Humana_StatusLastUpdated}
+          name: label_30
+          properties: {}
+          type: Label
+        - layout_properties: {slot: Humana_PROD_ODB_File}
+          name: label_31
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'YIQJGW,IFKKOW'}
+        name: rich_text_7
+        properties:
+          content: |-
+            Roster Ingestion Status Last Updated: {Humana_StatusLastUpdated}
+            Most Recent PROD-ODB RME File: {Humana_PROD_ODB_File}
+            Last Roster Received: {Humana_Status_datestamp}
+            Last Check for New Roster: {new_Humana_roster_check_datestamp}
         type: RichText
+      - components:
+        - layout_properties: {slot: Humana_Status_datestamp}
+          name: label_32
+          properties: {}
+          type: Label
+        - layout_properties: {slot: new_Humana_roster_check_datestamp}
+          name: label_33
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'CNANAG,APCYAU'}
+        name: rich_text_16
+        properties: {content: ''}
+        type: RichText
+      - layout_properties: {grid_position: 'YXWNZB,SECGTA'}
+        name: horizontal_bar_4
+        properties: {}
+        type: form:Components.Reusable.HorizontalBar
       name: Humana_Panel
       properties: {}
       type: ColumnPanel
@@ -127,24 +239,46 @@ components_by_slot:
         name: label_8
         properties: {font_size: 32, text: 'Devoted:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'NYAFXK,HQLIBF'}
+      - layout_properties: {grid_position: 'XVPTRB,CTOCVL'}
+        name: Devoted_Symbol_Conatiner
+        properties: {}
+        type: ColumnPanel
+      - components:
+        - layout_properties: {slot: Devoted_PROD_ODB_File}
+          name: label_34
+          properties: {}
+          type: Label
+        - layout_properties: {slot: Devoted_StatusLastUpdated}
+          name: label_35
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'NYAFXK,HQLIBF'}
         name: rich_text_3
         properties:
           content: |
             Roster Ingestion Status Last Updated: {Devoted_StatusLastUpdated}
             Most Recent PROD-ODB RME File: {Devoted_PROD_ODB_File}
         type: RichText
-      - layout_properties: {grid_position: 'NYAFXK,QSNEQE'}
-        name: Devoted_Symbol_Conatiner
-        properties: {}
-        type: ColumnPanel
-      - layout_properties: {grid_position: 'FPJDZD,UKWCBL'}
+      - components:
+        - layout_properties: {slot: new_Devoted_roster_check_datestamp}
+          name: label_36
+          properties: {}
+          type: Label
+        - layout_properties: {slot: Devoted_Status_datestamp}
+          name: label_37
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'FPJDZD,UKWCBL'}
         name: rich_text_4
         properties:
           content: |-
             Last Roster Received: {Devoted_Status_datestamp}
             Last Check for New Roster: {new_Devoted_roster_check_datestamp}
         type: RichText
+      - layout_properties: {grid_position: 'IDOEBV,HYCYFE'}
+        name: horizontal_bar_6
+        properties: {}
+        type: form:Components.Reusable.HorizontalBar
       name: Devoted_Panel
       properties: {}
       type: ColumnPanel
@@ -153,18 +287,36 @@ components_by_slot:
         name: label_9
         properties: {font_size: 32, text: 'Luminare:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'IYIWBG,MHYRCY'}
+      - layout_properties: {grid_position: 'FMMQVY,FVXJOZ'}
+        name: Luminare_Symbol_Conatiner
+        properties: {}
+        type: ColumnPanel
+      - components:
+        - layout_properties: {slot: Luminare_StatusLastUpdated}
+          name: label_38
+          properties: {}
+          type: Label
+        - layout_properties: {slot: Luminare_PROD_ODB_File}
+          name: label_39
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'IYIWBG,MHYRCY'}
         name: rich_text_1
         properties:
           content: |
             Roster Ingestion Status Last Updated: {Luminare_StatusLastUpdated}
             Most Recent PROD-ODB RME File: {Luminare_PROD_ODB_File}
         type: RichText
-      - layout_properties: {grid_position: 'IYIWBG,XSDVLE'}
-        name: Luminare_Symbol_Conatiner
-        properties: {}
-        type: ColumnPanel
-      - layout_properties: {grid_position: 'LUYKXD,SPMKOD'}
+      - components:
+        - layout_properties: {slot: Luminare_Status_datestamp}
+          name: label_40
+          properties: {}
+          type: Label
+        - layout_properties: {slot: new_Luminare_roster_check_datestamp}
+          name: label_41
+          properties: {}
+          type: Label
+        layout_properties: {grid_position: 'LUYKXD,SPMKOD'}
         name: rich_text_2
         properties:
           content: |+

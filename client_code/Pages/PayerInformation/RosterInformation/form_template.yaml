@@ -26,5 +26,8 @@ components:
   name: column_panel_1
   properties: {}
   type: ColumnPanel
-container: {type: ColumnPanel}
+container:
+  data_bindings: []
+  properties: {foreground: ''}
+  type: ColumnPanel
 is_package: true
