@@ -2,22 +2,43 @@ components_by_slot:
   primary_static_slot:
   - components:
     - components:
+      - layout_properties: {grid_position: 'ALUARR,MXPETV'}
+        name: label_10
+        properties: {bold: false, font_size: 32, text: 'Aetna:', underline: true}
+        type: Label
+      - components: []
+        layout_properties: {grid_position: 'UVGQZD,EGTUYX'}
+        name: rich_text_5
+        properties: {}
+        type: RichText
+      - layout_properties: {grid_position: 'UVGQZD,CHAJVM'}
+        name: Aetna_Symbol_Container
+        properties: {}
+        type: ColumnPanel
+      - layout_properties: {grid_position: 'SCKIKO,DDGPRM'}
+        name: rich_text_6
+        properties: {}
+        type: RichText
+      name: Aetna_Panel
+      properties: {}
+      type: ColumnPanel
+    - components:
       - layout_properties: {grid_position: 'UYVVQJ,OYTDEH'}
         name: label_3
         properties: {font_size: 32, text: ACO Reach, underline: true}
         type: Label
-      - layout_properties: {grid_position: 'NJXCAZ,BGQBSQ'}
-        name: label_4
-        properties: {text: Last Updated}
-        type: Label
-      - layout_properties: {grid_position: 'NJXCAZ,MSVYVY'}
-        name: spacer_1
-        properties: {height: 32}
-        type: Spacer
+      - layout_properties: {grid_position: 'NJXCAZ,NAAHCY'}
+        name: rich_text_11
+        properties: {}
+        type: RichText
       - layout_properties: {grid_position: 'NJXCAZ,MCHNZB'}
         name: ACOReach_Symbol_Container
         properties: {}
         type: ColumnPanel
+      - layout_properties: {grid_position: 'OJJSZJ,SZMTVW'}
+        name: rich_text_12
+        properties: {}
+        type: RichText
       name: ACOReach_Panel
       properties: {}
       type: ColumnPanel
@@ -26,18 +47,18 @@ components_by_slot:
         name: label_2
         properties: {font_size: 32, text: 'Anthem Commercial:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'NHJIZG,OLKBIF'}
-        name: label_15
-        properties: {text: 'Last Updated:'}
-        type: Label
-      - layout_properties: {grid_position: 'NHJIZG,BUBIBZ'}
-        name: spacer_7
-        properties: {height: 32}
-        type: Spacer
+      - layout_properties: {grid_position: 'NHJIZG,MGIAIG'}
+        name: rich_text_10
+        properties: {}
+        type: RichText
       - layout_properties: {grid_position: 'NHJIZG,EQVBMD'}
         name: AnthemCommercial_Symbol_Conatiner
         properties: {}
         type: ColumnPanel
+      - layout_properties: {grid_position: 'EPDQDE,NTLMBD'}
+        name: rich_text_13
+        properties: {}
+        type: RichText
       name: AnthemCommercial_Panel
       properties: {role: Background_Blue}
       type: ColumnPanel
@@ -46,18 +67,18 @@ components_by_slot:
         name: label_5
         properties: {font_size: 32, text: 'Anthem MA:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'GTWQIP,WOAHRE'}
-        name: label_14
+      - layout_properties: {grid_position: 'GTWQIP,FOTZAF'}
+        name: rich_text_9
         properties: {}
-        type: Label
-      - layout_properties: {grid_position: 'GTWQIP,EEVDMH'}
-        name: spacer_6
-        properties: {height: 32}
-        type: Spacer
+        type: RichText
       - layout_properties: {grid_position: 'GTWQIP,YUSFMC'}
         name: AnthemMA_Symbol_Conatiner
         properties: {}
         type: ColumnPanel
+      - layout_properties: {grid_position: 'FTGZLO,MDMFIH'}
+        name: rich_text_14
+        properties: {}
+        type: RichText
       name: AnthemMA_Panel
       properties: {}
       type: ColumnPanel
@@ -66,18 +87,18 @@ components_by_slot:
         name: label_6
         properties: {font_size: 32, text: 'MMOH:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'LMYEGP,AVCVZT'}
-        name: label_13
+      - layout_properties: {grid_position: 'LMYEGP,PIHPEX'}
+        name: rich_text_8
         properties: {}
-        type: Label
-      - layout_properties: {grid_position: 'LMYEGP,YXLWRI'}
-        name: spacer_5
-        properties: {height: 32}
-        type: Spacer
+        type: RichText
       - layout_properties: {grid_position: 'LMYEGP,LNOXOJ'}
         name: MMOH_Symbol_Conatiner
         properties: {}
         type: ColumnPanel
+      - layout_properties: {grid_position: 'ODLTOY,LEQHAZ'}
+        name: rich_text_15
+        properties: {}
+        type: RichText
       name: MMOH_Panel
       properties: {}
       type: ColumnPanel
@@ -86,18 +107,18 @@ components_by_slot:
         name: label_7
         properties: {font_size: 32, text: 'Humana:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'YIQJGW,HLJUQV'}
-        name: label_12
+      - layout_properties: {grid_position: 'YIQJGW,IFKKOW'}
+        name: rich_text_7
         properties: {}
-        type: Label
-      - layout_properties: {grid_position: 'YIQJGW,GHLEFC'}
-        name: spacer_4
-        properties: {height: 32}
-        type: Spacer
+        type: RichText
       - layout_properties: {grid_position: 'YIQJGW,CCMYJD'}
         name: Humana_Symbol_Conatiner
         properties: {}
         type: ColumnPanel
+      - layout_properties: {grid_position: 'CNANAG,APCYAU'}
+        name: rich_text_16
+        properties: {}
+        type: RichText
       name: Humana_Panel
       properties: {}
       type: ColumnPanel
@@ -106,18 +127,24 @@ components_by_slot:
         name: label_8
         properties: {font_size: 32, text: 'Devoted:', underline: true}
         type: Label
-      - layout_properties: {grid_position: 'NYAFXK,ZNRJFR'}
-        name: label_11
-        properties: {}
-        type: Label
-      - layout_properties: {grid_position: 'NYAFXK,YMCAPW'}
-        name: spacer_3
-        properties: {height: 32}
-        type: Spacer
+      - layout_properties: {grid_position: 'NYAFXK,HQLIBF'}
+        name: rich_text_3
+        properties:
+          content: |
+            Roster Ingestion Status Last Updated: {Devoted_StatusLastUpdated}
+            Most Recent PROD-ODB RME File: {Devoted_PROD_ODB_File}
+        type: RichText
       - layout_properties: {grid_position: 'NYAFXK,QSNEQE'}
         name: Devoted_Symbol_Conatiner
         properties: {}
         type: ColumnPanel
+      - layout_properties: {grid_position: 'FPJDZD,UKWCBL'}
+        name: rich_text_4
+        properties:
+          content: |-
+            Last Roster Received: {Devoted_Status_datestamp}
+            Last Check for New Roster: {new_Devoted_roster_check_datestamp}
+        type: RichText
       name: Devoted_Panel
       properties: {}
       type: ColumnPanel
@@ -150,7 +177,8 @@ components_by_slot:
       type: ColumnPanel
     layout_properties: {}
     name: linear_panel_1
-    properties: {role: Background_Blue}
+    properties:
+      role: [Background_Blue, horizontal_scroll]
     type: LinearPanel
   title_slot:
   - layout_properties: {}
