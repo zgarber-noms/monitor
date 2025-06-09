@@ -48,10 +48,6 @@ components_by_slot:
         name: label_3
         properties: {font_size: 32, text: ACO Reach, underline: true}
         type: Label
-      - layout_properties: {grid_position: 'UYVVQJ,OCFOYR'}
-        name: ACOReach_Symbol_Container
-        properties: {}
-        type: ColumnPanel
       - components:
         - layout_properties: {slot: ACOReach_StatusLastUpdated}
           name: label_14
@@ -78,6 +74,14 @@ components_by_slot:
             Last Roster Received: {ACOReach_Status_datestamp}
             Last Check for New Roster: {new_ACOReach_roster_check_datestamp}
         type: RichText
+      - layout_properties: {grid_position: 'XVYLHC,ESZCTG'}
+        name: label_20
+        properties: {text: 'Roster Ingestion Status Last Update : '}
+        type: Label
+      - layout_properties: {grid_position: 'XVYLHC,SHBUGD'}
+        name: ACOReach_Symbol_Container
+        properties: {}
+        type: ColumnPanel
       - layout_properties: {grid_position: 'IGVSZV,ZSXXUB'}
         name: horizontal_bar_2
         properties: {}
