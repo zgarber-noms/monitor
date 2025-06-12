@@ -58,22 +58,30 @@ class RosterSummary(RosterSummaryTemplate):
     MOST_RECENT_ROSTER_DOWNLOADED = 'Most Recent Roster Downloaded: '
     LAST_ROSTER_INGESTED = 'Previous Roster Ingested: '
     LAST_ROSTER_DOWNLOADED = 'Last Roster Downloaded: '
-      
+    
+    '''
+    ACO Reach
+    -------------------------
+    RME
+    '''  
+    self.item['ACO Reach Previous RME Filename'] = str(NotImplemented) 
     self.item['ACO Reach Previous RME Count'] = LAST_RME_COUNT_TEXT + str(roster_rme_results['ACO Reach']['Count'])
     self.item['ACO Reach Previous RME Date'] = LAST_RME_RUN_TEXT + roster_rme_results['ACO Reach']['Date'].strftime("%Y-%m-%d")
 
-    
+    '''
+    Everything Else
+    '''
     #some payers have more than one input roster
-    for roster_filename in roster_job_results['']:
+    for roster_filename in roster_job_results['ACO Reach Roster']['input_files']:
       roster_filename_text = roster_filename + ' '
+    print(f'rft: {roster_filename_text}')
     
+    self.item['ACO Reach Previous Roster Downloaded'] = LAST_ROSTER_DOWNLOADED + anvil.server.call('get_most_recent_ACO_Reach_roster_downloaded')
     self.item['ACO Reach Previous Roster Ingested'] = LAST_ROSTER_INGESTED + roster_filename_text
-    self.item['ACO Reach Previous Roster Downloaded'] = LAST_ROSTER_INGESTED + roster_filename_text
-
+    
     
     print('***')
-    self.item['ACO Reach Previous RME Filename'] = str(NotImplemented) 
-
+    
 
 
     
