@@ -98,10 +98,6 @@ components_by_slot:
         name: label_20
         properties: {text: ''}
         type: Label
-      - layout_properties: {grid_position: 'XVYLHC,ESZCTG EWIASJ,IPFZHH'}
-        name: label_46
-        properties: {text: 'Most Recent Roster Downloaded:'}
-        type: Label
       - data_bindings:
         - {code: 'self.item[''ACO Reach Previous datafiles Check'']', property: text, writeback: false}
         layout_properties: {grid_position: 'XVYLHC,ESZCTG SAEMDE,CWPFLZ'}
