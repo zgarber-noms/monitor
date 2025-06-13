@@ -7,6 +7,7 @@ import anvil.users
 from ...Components.Icons.CheckMark import CheckMark
 from ...Components.Icons.RedX import RedX
 from ...Components.Icons.Hourglass import Hourglass
+from datetime import datetime
 
 class RosterSummary(RosterSummaryTemplate):
   def __init__(self, **properties):
@@ -48,7 +49,9 @@ class RosterSummary(RosterSummaryTemplate):
 
     roster_rme_results = anvil.server.call('get_payer_rme_most_recent_results')
     roster_job_results = anvil.server.call('get_most_recent_roster_jobs')
-    print(roster_job_results)
+    previous_payer_data_check_job_results = anvil.server.call('get_previous_data_interface_job_details')
+
+    print(previous_payer_data_check_job_results)
     print('---')
 
     LAST_RME_RUN_TEXT = 'Last RME Ran On: '
@@ -58,16 +61,36 @@ class RosterSummary(RosterSummaryTemplate):
     MOST_RECENT_ROSTER_DOWNLOADED = 'Most Recent Roster Downloaded: '
     LAST_ROSTER_INGESTED = 'Previous Roster Ingested: '
     LAST_ROSTER_DOWNLOADED = 'Last Roster Downloaded: '
+    LAST_PAYER_SITE_CHECK = 'Last Check for New Roster on Payer Site: '
+    FAIL = 'FAILED TO LOAD DATA'
+
+    print(datetime.now())
     
     '''
     ACO Reach
     -------------------------
     RME
-    '''  
-    self.item['ACO Reach Previous RME Filename'] = str(NotImplemented) 
-    self.item['ACO Reach Previous RME Count'] = LAST_RME_COUNT_TEXT + str(roster_rme_results['ACO Reach']['Count'])
-    self.item['ACO Reach Previous RME Date'] = LAST_RME_RUN_TEXT + roster_rme_results['ACO Reach']['Date'].strftime("%Y-%m-%d")
+    '''
+    try:
+      self.item['ACO Reach Previous RME Filename'] = str(NotImplemented) 
+    except:
+      self.item['ACO Reach Previous RME Filename'] = FAIL
 
+    try:
+      self.item['ACO Reach Previous RME Count'] = LAST_RME_COUNT_TEXT + str(roster_rme_results['ACO Reach']['Count'])
+    except:
+      self.item['ACO Reach Previous RME Count'] = LAST_RME_COUNT_TEXT + FAIL
+      
+    try:
+      self.item['ACO Reach Previous RME Date'] = LAST_RME_RUN_TEXT + roster_rme_results['ACO Reach']['Date'].strftime("%Y-%m-%d")
+    except:
+      self.item['ACO Reach Previous RME Date'] = LAST_RME_RUN_TEXT + FAIL
+      
+    try:
+      
+      self.item['ACO Reach Previous datafiles Check'] = LAST_PAYER_SITE_CHECK + '{date}'.format(date=datetime.strptime(previous_payer_data_check_job_results['datetime'], '%Y-%m-%d %H:%M:%S.%f').strftime( '%Y-%m-%d %H:%M'))
+    except:
+      self.item['ACO Reach Previous datafiles Check'] = LAST_PAYER_SITE_CHECK + FAIL
     '''
     Everything Else
     '''
@@ -75,10 +98,15 @@ class RosterSummary(RosterSummaryTemplate):
     for roster_filename in roster_job_results['ACO Reach Roster']['input_files']:
       roster_filename_text = roster_filename + ' '
     print(f'rft: {roster_filename_text}')
-    
-    self.item['ACO Reach Previous Roster Downloaded'] = LAST_ROSTER_DOWNLOADED + anvil.server.call('get_most_recent_ACO_Reach_roster_downloaded')
-    self.item['ACO Reach Previous Roster Ingested'] = LAST_ROSTER_INGESTED + roster_filename_text
-    
+    try:
+      self.item['ACO Reach Previous Roster Downloaded'] = LAST_ROSTER_DOWNLOADED + anvil.server.call('get_most_recent_ACO_Reach_roster_downloaded')
+    except:
+      pass
+    try:
+      self.item['ACO Reach Previous Roster Ingested'] = LAST_ROSTER_INGESTED + FAIL
+    except:
+      self.item['ACO Reach Previous Roster Ingested'] = LAST_ROSTER_INGESTED + FAIL
+      
     
     print('***')
     
