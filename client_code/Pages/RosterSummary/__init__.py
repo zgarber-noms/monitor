@@ -136,3 +136,7 @@ class RosterSummary(RosterSummaryTemplate):
     self.item['Anthem Commercial Previous RME Date'] = roster_rme_results['Anthem Commercial']['Date']
     '''
     print('done')
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    anvil.server.call('start_job_schedule')
