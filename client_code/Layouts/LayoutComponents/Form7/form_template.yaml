@@ -5,5 +5,13 @@ is_package: true
 slots:
   slot_1:
     index: 0
-    set_layout_properties: {grid_position: 'FLLLMF,DWMDVG'}
+    set_layout_properties: {full_width_row: true, grid_position: 'XGMFHC,CEHKJO'}
+    target: {name: '', type: container}
+  slot_2:
+    index: 0
+    set_layout_properties: {full_width_row: true, grid_position: 'XLRVKM,TRUOBC'}
+    target: {name: '', type: container}
+  slot_3:
+    index: 0
+    set_layout_properties: {grid_position: 'XLRVKM,MXLAFP NTKPJX,EZECMC'}
     target: {name: '', type: container}
