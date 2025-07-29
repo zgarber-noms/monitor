@@ -5,7 +5,6 @@ import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
 import anvil.users
 
-
 class Form7(Form7Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
