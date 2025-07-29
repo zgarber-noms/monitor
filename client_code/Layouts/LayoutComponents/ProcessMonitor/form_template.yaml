@@ -19,10 +19,6 @@ slots:
     index: 2
     set_layout_properties: {grid_position: 'XLRVKM,MFCSMC'}
     target: {name: '', type: container}
-  slot_3:
-    index: 2
-    set_layout_properties: {grid_position: 'JJJLFT,KRAFAH'}
-    target: {name: '', type: container}
   title_slot:
     index: 0
     set_layout_properties: {full_width_row: true, grid_position: 'XLRVKM,CWCWAX'}
