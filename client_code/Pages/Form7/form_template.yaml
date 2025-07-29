@@ -1,0 +1,5 @@
+components_by_slot:
+  slot_2: []
+  slot_3: []
+is_package: true
+layout: {type: 'form:Layouts.LayoutComponents.ProcessMonitor'}

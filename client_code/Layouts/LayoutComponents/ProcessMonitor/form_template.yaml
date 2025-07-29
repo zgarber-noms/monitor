@@ -8,7 +8,7 @@ components:
   properties: {text: button_1}
   type: Button
 container: {type: ColumnPanel}
-custom_component: true
+custom_component: false
 is_package: true
 slots:
   slot_1:
